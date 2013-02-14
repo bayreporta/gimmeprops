@@ -1,0 +1,380 @@
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}	
+
+#container {
+	width:860px;
+	height:640px;
+	background-color:#1E1E1E;
+}
+
+
+/* SLIDE STYLE */
+.slides {
+	width:860px;
+	height:640px;
+}
+
+/* TEXT IN BUBBLES STYLE */
+.bubbletext {
+	font-family:"open sans condensed","open sans","san serif";
+	font-weight:300;
+	font-size:20px;
+}
+
+/* TOOLTIP STLYE */
+	#tooltip {
+		position:absolute;
+		z-index:9999;
+		color:#fff;
+		font-size:13px;
+		line-height:20px;
+		word-spacing:1px;
+		width:180px;
+		font-family:"open sans","san serif";
+		opacity:0.7;
+		
+	}
+	a:hover {
+		text-decoration:none;
+	}
+
+	#tooltip .tipBody {
+		background-color:#1E1E1E;
+		padding:5px 9px 5px 15px;
+		border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
+
+/* ARROW PLACEMENT STYLES */
+	.right_arrow {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:810px;
+		padding:0px;
+		margin:0px;
+		z-index:999;
+	}
+	.right_arrow_solid {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:810px;
+		padding:0px;
+		margin:0px;
+		z-index:999;
+	}
+	.left_arrow {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:20px;
+		padding:0px;
+		margin:0px;
+		z-index:999;
+	}
+	.left_arrow_solid {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:20px;
+		padding:0px;
+		margin:0px;
+		z-index:999;
+	}
+	
+
+						/* INDIVIDUAL SLIDE STYLE */
+						.interactive_textbox {
+							position:absolute;
+							left:10px;
+							top:10px;
+							z-index:999;
+							background:#1E1E1E;
+							border:white 1px solid;
+							border-radius:20px;
+							width:300px;
+							height:100px;
+
+						}	
+						.interactive_text {
+							position:absolute;
+							left:20px;
+							top:20px;
+							z-index:999;
+							width:280px;
+							height:100px;
+							font-size:24px;
+							color:white;
+							font-family:"open sans condensed","san serif";
+						}
+						
+						#small_character {
+							position:absolute;
+							left:330px;
+							top:10px;
+							z-index:999;
+						}
+
+						#summary_slide {
+							display:block;
+						}
+								/* ADJUST POSITION BASED ON CHARACTER*/
+								#slide1Char {
+									width:255px;
+									position:absolute;
+									left:542px;
+									top:196px;
+								}
+									#slide1bubble {
+										width:497px;
+										height:137px;
+										border-radius:20px;
+										background:white;
+										position:absolute;
+										left:35px;
+										top:42px;
+									}
+									.triangle {
+										width:0; 
+										height:0; 
+										border-top: 60px solid transparent;
+										border-bottom: 60px solid transparent;
+										border-left: 60px solid white;
+										z-index:999;
+										position:absolute;
+										left:482px;
+										top:100px;
+										transform:rotate(310deg);
+										-ms-transform:rotate(310deg); /* IE 9 */
+										-moz-transform:rotate(310deg); /* Firefox */
+										-webkit-transform:rotate(310deg); /* Safari and Chrome */
+										-o-transform:rotate(310deg); /* Opera */
+									}
+						
+								#summary_text {
+									left:46px;
+									top:56px;
+									width:464px;
+									height:185px;
+									position:absolute;
+									z-index:1;
+								}
+								#slide1_chartext {
+									color:white;
+									font-family:"open sans",helvetica,"san serif";
+									font-weight:700;
+									opacity:0.7;
+									position:absolute;
+									text-align:right;
+									left:440px;
+									top:612px;
+									width:400px;
+								}
+								
+								/* RELATED LINKS SLIDE STYLE */		
+								#related_links {
+									display:none;
+
+								}		
+										#linkbox {
+											background: rgba(39,86,113,0.6);
+											width:361px;
+											height:300px;
+											border-radius:20px;
+											border: white 2px solid;
+											position:absolute;
+											left:80px;
+											top:194px;
+
+										}	
+										#linkbox h2 {
+											color:white;
+											width:361px;
+											text-align:center;
+											padding:5px 0px 0px 0px;
+											font-family:"open sans condensed","open sans","san serif";
+											font-size:30px;
+										}
+										#linkbox ul {
+											list-style-type:none;
+											padding:0px 0px 0px 20px;
+											margin-top:40px;
+										}
+										#linkbox li {
+											margin-bottom:10px;
+										}
+
+										#linkbox a {
+											text-decoration:none;
+											color:white;
+											font-family:"open sans","san serif";
+											font-size:16px;
+										}	
+										#linkbox a:hover {
+											color:#969696;
+										}
+										#link_bubble {
+											background:white;
+											width:487px;
+											height:90px;
+											border-radius:20px;
+											position:absolute;
+											left:41px;
+											top:20px;
+										}
+																#link_bubble_text {
+																	font-family:"open sans condensed","open sans","san serif";
+																	font-size:20px;
+																	position:absolute;
+																	width:450px;
+																	padding:15px 0px 0px 20px;
+																}						
+										#link_image {
+											position:absolute;
+											left:460px;
+											top:103px;
+										}
+								
+								#capitol_s2 {
+									display:none;
+								}
+										#but1 {
+											position:absolute;
+											left:410px;
+											top:202px;
+										}
+										#but2 {
+											position:absolute;
+											left:410px;
+											top:433px;
+										}
+										#but3 {
+											position:absolute;
+											left:711px;
+											top:409px;
+										}
+								
+								#governor_s3 {
+									display:none;
+								}
+										#desk {
+											position:absolute;
+											left:237px;
+											top:326px;
+											z-index:1;
+										}
+										#brown {
+											position:absolute;
+											left:380px;
+											top:213px;
+										}
+										#red {
+											position:absolute;
+											left:376px;
+											top:473px;
+										}
+										#book {
+											position:absolute;
+											left:312px;
+											top:306px;
+										}
+										#budgetdude {
+											position:absolute;
+											left:180px;
+											top:220px;
+											z-index:999;
+										}
+								#chamber_s4 {
+									display:none;
+								}
+										
+										#back2 {
+											position:absolute;
+											left:0px;
+											top:266px;
+											z-index:1;
+										}
+										#rug {
+											position:absolute;
+											left:0px;
+											top:432px;
+											z-index:0;
+										}
+										#leaders {
+											position:absolute;
+											left:391px;
+											top:174px;
+										}
+										#law {
+											position:absolute;
+											left:570px;
+											top:35px;
+										}
+										#money {
+											position:absolute;
+											left:350px;
+											top:370px;
+											z-index:999;
+										}
+										#person {
+											position:absolute;
+											left:771px;
+											top:182px;	
+										}
+										#person2 {
+											position:absolute;
+											left:84px;
+											top:190px;	
+										}
+								#rotunda_s5 {
+									display:none;
+								}
+										#back3 {
+											position:absolute;
+											left:0px;
+											top:0px;
+											
+										}
+										#troop {
+											position:absolute;
+											left:703px;
+											top:288px;
+											z-index:999;
+										}
+										#cash {
+											position:absolute;
+											left:573px;
+											top:345px;	
+										}
+										#local {
+											position:absolute;
+											left:218px;
+											top:306px;
+											z-index:999;
+										}
+										#plan {
+											position:absolute;
+											left:424px;
+											top:190px;	
+										}
+								

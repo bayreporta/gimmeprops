@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 31</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS--> 
+	<link href='css/prop31.css' rel='stylesheet' type='text/css'>
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop31.js" type="text/javascript" charset="utf-8"></script>
+
+	
+
+</head>
+<body onload="arrowCleaning();">
+	<div id="container">		 
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.png" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		 
+		<!-- START SLIDE HTML -->
+			<!-- SUMMARY SLIDE HTML -->
+				<section id="summary_slide" class="slides">
+					<div id="slide1bubble"></div> 
+					<div class="triangle"></div>
+					<article id="summary_text" class="bubbletext"><strong><b>Prop 31</b></strong> is pretty much a binder full of … reforms: two-year budget cycle, executive slashing power in fiscal emergencies, taking over function of state programs at local level, and thorough state program reviews. </article> 
+					<img src="assets/willa.png" id="slide1Char">
+					<p id="slide1_chartext">- Willa the Billa, Schoolhouse Rock Refugee</p>
+					
+
+
+					
+				</section>
+				
+			<!-- RELATED LINKS SLIDE HTML -->
+				<section id="related_links" class="slides">
+					<div id="link_bubble">
+						<span id="link_bubble_text">Want to know more about <strong><b>Prop 31</b></strong>? Here's a few links for you to check out about these proposed reforms.</span>
+					</div>
+					<div id="linkbox">
+						<h2>Related Links</h2>
+						<ul>
+							<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/31-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+							<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/31-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+							<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#2"><li>California Report Info on Prop 31</li></a>
+							<a target="blank" href="http://www.accountableca.org/"><li>Supporters of Prop 31 Website</li></a>
+							<a target="blank" href="http://prop31facts.com/"><li>Opponents of Prop 31 Website</li></a>
+						</ul>	
+					</div>
+					<div class="triangle" style="top:55px;left:475px"></div>
+					
+					<img src="assets/willa_s2_40.svg" id="link_image">
+				</section>
+				
+			<!-- CAPITOL SLIDE HTML -->	
+				<section id="capitol_s2">
+					<div class="interactive_textbox">
+						<span class="interactive_text">Click on the dot to travel to that part of the Capitol.</span>
+					</div>
+
+					<!-- BACKGROUND -->
+					<img id="background" src="assets/background_s2_31.png">
+					<img id="small_character" src="assets/willa_small.png">
+
+					<!-- CLICKABLES -->
+					<a href="#" rel="tooltip" title="Rotunda" onclick="buttonSwitch1();"><img id="but1" class="selectable" src="assets/button.png"></a>
+					<a href="#" rel="tooltip" title="Assembly Chamber" onclick="buttonSwitch2();"><img id="but2" class="selectable" src="assets/button.png"></a>
+					<a href="#" rel="tooltip" title="Governor's Office" onclick="buttonSwitch3();"><img id="but3" class="selectable" src="assets/button.png"></a>
+				</section>
+				
+			<!-- GOVERNOR SLIDE HTML -->		
+				<section id="governor_s3">
+					<div class="interactive_textbox">
+						<span class="interactive_text">Explore Governor Jerry Brown's Office.</span>
+					</div>
+					
+					<!-- BACKGROUND -->
+					<img id="background" src="assets/background_s3_31.png">
+					<img id="desk" src="assets/desk_s3_31.png">
+					<img id="red" src="assets/red_s4_31.png"></a>
+					<img id="book" src="assets/book_s4_31.png">
+					<img id="small_character" src="assets/willa_small.png">
+					
+					
+					<!-- CLICKABLES -->
+					<a href="#" rel="tooltip" title="<strong><b>Budgetocalypse</strong></b><br>
+						• If a fiscal emergency is declared, Legislature has 45 days to act<br>
+					• If Legislature doesn’t act, governor can cut budget as he sees fit to address the budget shortfall<br>
+					• The Legislature can stop the governor’s cuts with a 2/3 vote"><img id="brown" class="selectable" src="assets/brown_s3_31.png"></a>
+					<a href="#" rel="tooltip" title="<strong><b>Two-Year Budget</strong></b> 
+						<br>• Each year during budget time state officials would create a budget for two fiscal years"><img id="budgetdude" class="selecable" src="assets/budgetdude_s3_31.png"></a>
+					
+				</section>
+
+			<!-- CHAMBER SLIDE HTML -->		
+				<section id="chamber_s4">
+					<div class="interactive_textbox">
+						<span class="interactive_text">Explore the Assembly Chambers.</span>
+					</div>
+					
+					<!-- BACKGROUND -->
+					<img id="background" src="assets/background_s4_31.png">
+					<img id="back2" src="assets/desk_s4_31.png">
+					<img id="rug" src="assets/rug_s4_31.png">
+					<img id="law" src="assets/law_s4_31.png">
+					<img id="money" src="assets/money_s4_31.png">
+					<img id="small_character" src="assets/willa_small.png">
+					
+					
+					<!-- CLICKABLES -->
+					<a href="#" rel="tooltip" title="<strong><b>Goals and Stuff</strong></b><br>
+						• Every state-funded program must be reviewed by the Legislature once every five years"><img id="leaders" class="selectable" src="assets/leaders_s4_31.png"></a>
+					<a href="#" rel="tooltip" title="<strong><b>Transparency</strong></b><br>
+							• Any bill that goes before the Legislature must be available to the public at least three days before a vote"><img id="person2" class="selectable" src="assets/person2_s4_31.png"></a>
+					<a href="#" rel="tooltip" title="<strong><b>Balancing Act</strong></b><br>
+								• Any law that would decrease revenue or increase spending by $25 million or more must be offset with corresponding spending cuts or revenue (with some exceptions)"><img id="person" class="selectable" src="assets/person_s4_31.png"></a>
+					
+				</section>
+
+			<!-- ROTUNDA SLIDE HTML -->		
+				<section id="rotunda_s5">
+					<div class="interactive_textbox">
+						<span class="interactive_text">Explore the Rotunda.</span>
+					</div>
+					
+					<!-- BACKGROUND -->
+					<img id="background" src="assets/background_s5_31.png">
+					<img id="back3" src="assets/background_s5_31.png">
+					<img id="cash" src="assets/cash_s5_31.png">
+					<img id="small_character" src="assets/willa_small.png">
+					
+				
+					
+					<!-- CLICKABLES -->
+					<a href="#" rel="tooltip" title="<strong><b>Localize</strong></b><br>
+					 • Allows local governments to decide how they want to deliver state-provided services and administer state-run programs<br>
+					• Allows local governments to decide how to allocate local property tax revenue"><img id="local" class="selectable" src="assets/local_s5_31.png"></a>
+					<a href="#" rel="tooltip" title="<strong><b>Planning Ahead</strong></b><br>
+						• Local governments must make budget and economic development plans and review the progress towards reaching those goals"><img id="plan" class="selectable" src="assets/plan_s5_31.png"></a>
+					<a href="#" rel="tooltip" title="<strong><b>Startup Funds</strong></b><br>
+							• Diverts about $200 million a year from state sales tax revenue to experimental local plans, like taking over early childcare services from state"><img id="troop" class="selectable" src="assets/troop_s5_31.png"></a>
+					
+				</section>
+				
+	</div>
+</body>
+</html>

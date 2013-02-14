@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 35</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS-->
+	<link href='css/prop35.css' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script src="js/prop35.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/35quiz.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</head>
+<body onload="arrowCleaning();changeQuestion();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		
+		<!-- START SLIDE HTML -->
+		<div id="summary_slide" class="slides">
+			<img src="prop34/nightshade_1.svg" id="slide1Char">
+			<div class="triangle"></div>
+			<div id="slide1bubble"></div>
+			<article id="summary_text" class="bubbletext"><strong><b>Prop 35</b></strong> would make human trafficking a serious offense in California: penalties and fines would increase, the definition would be broadened to include such activities as distributing obscene materials about minors, and money would go to victims and cops. </article> 
+			<p id="slide1_chartext">- Nightshade, Convicted Sex Offender</p>
+		</div>
+
+		<!-- RELATED LINKS SLIDE HTML -->
+		<section id="related_links" class="slides">
+			<div id="link_bubble">
+				<span id="link_bubble_text">Want to know more about <strong><b>Prop 35</strong></b>? Learn more about the prop at the many links below. </span>
+			</div>
+			<div class="triangle" style="top:50px;left:478px;"></div>
+			<div id="linkbox">
+				<h2>Related Links</h2>
+				<ul>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/35-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/35-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+					<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#6"><li>California Report Info on Prop 35</li></a>
+					<a target="blank" href="http://www.caseact.org/"><li>Supporters of Prop 35 Website</li></a>
+					<a target="blank" href="http://noonprop35.wordpress.com/"><li>Opponents of Prop 35 Website</li></a>
+				</ul>	
+			</div>
+			<img src="assets/nightshade_rl.svg" id="link_image">
+		</section>
+				
+		<!-- INTERACTIVE SLIDE HTML -->
+		<section id="interactive_s2" class="slides">w
+			<div id="interactive_textbox">
+				<span id="interactive_text">Scroll around the screen to discover information about Prop 35.</span>
+			</div>
+			
+			<!-- BACKGROUND -->
+			<img id="background" src="assets/background_s2_35.png">
+			<img id="desk" src="assets/desk_s2_35.png">
+			<img id="book" src="assets/book_s2_36.png">
+			<img id="small_character" src="assets/nightshade_small.png">
+			
+			<!-- CLICKABLES -->
+			<a href="#" rel="tooltip" title="<strong><b>Protecting Victims</strong></b><br> 
+			• Evidence of sexual behavior by a victim could not be used against the victim in a trafficking trial.<br>
+			• Seventy percent of all assets seized in trafficking cases would go towards direct services helping trafficked sex workers."><img id="help" class="selectable" src="assets/help_s2_35.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Consensual Sex Workers</strong></b><br> 
+			• Sex workers and escorts are concerned that the broad language in the prop could target their consensual sexual activities due to the linking of prostitution with trafficking."><img id="worker" class="selectable" src="assets/worker_s2_35.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Law Enforcement</strong></b><br> 
+			• Law enforcement agencies would be required to participate in a two-hour training about trafficking, where officers would learn how to take a complaint.<br> 
+			• Law enforcement would get 30 percent of all seized assets in trafficking cases"><img id="cop" class="selectable" src="assets/cop_s2_35.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Think of the Children</strong></b><br>
+			• In trafficking cases, “I didn’t know she or he was a minor” could not be used as a defense.<br>
+			• Consent of a minor cannot be used as a defense, either."><img id="minor" class="selectable" src="assets/minor_s2_35.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Sex Offenders</strong></b><br> 
+			• With few exceptions, all those found guilty of trafficking would have to register as sex offenders and disclose all of their online identities, including social media accounts."><img id="arrest" class="selectable" src="assets/arrest_s2_35.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Broadening Trafficking</strong></b><br>
+			• The definition of human trafficking would be broadened to include a litany of sex offenses, such as pimping and pandering and distributing or creating obscene material featuring a minor. <br>
+			• Penalties and fines would be substantially increased."><img id="traffick" class="selectable" src="assets/traffick_s2_35.png"></a>
+		</section>
+		
+		<!-- QUIZ SLIDE HTML -->
+		<section id="quiz_s3">
+			<div id="shell">
+				<h2 id="quizquestion"></h2>
+				<p id="scoreplace">Score: <span id="scoreshow"></span></p>
+				<section id="explaination">
+					<h2 id="verdict"></h2>
+					<span id="explaintext"></span>
+					<button id="nextbut" class="buttonstyle selectable" onclick="changeQuestion();clickSound('taxfighter/click.mp3');">Next Question</button>
+					<button id="startover" class="buttonstyle selectable" onclick="resetGame();changeQuestion();clickSound('taxfighter/click.mp3');">Play Again?</button>
+				</section>	
+				<img id="quizimage" src="assets/quizimage.png">
+				<div id="quizchoices">
+					<button id="but1" class="buttonstyle selectable" onclick="updateScore(0);verdictCheck(0);clickSound('taxfighter/click.mp3');"></button>
+					<button id="but2" class="buttonstyle selectable" onclick="updateScore(1);verdictCheck(1);clickSound('taxfighter/click.mp3');"></button>
+					<button id="but3" class="buttonstyle selectable" onclick="updateScore(2);verdictCheck(2);clickSound('taxfighter/click.mp3');"></button>
+
+				</div>
+				<span id='dummy'></span>
+			</div>
+		</section>	
+		
+		
+	</div>
+</body>
+</html>

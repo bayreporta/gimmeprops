@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 37</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS-->
+	<link href='css/prop37.css' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop37.js" type="text/javascript" charset="utf-8"></script>
+
+
+	
+</head>
+<body onload="arrowCleaning();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		
+		<!-- START SLIDE HTML -->
+		<section id="summary_slide" class="slides">
+			<img src="assets/tommy.svg" id="slide1Char">
+			<div id="slide1bubble"></div>
+			<article id="summary_text" class="bubbletext"><strong><b>Prop 37</strong></b> would require that any raw or processed food made from plants with genetically modified material to be labeled if sold in California. Such foods could also not be labeled natural in product advertising. There are a number of exceptions to what can be labeled, including products from animals fed GMO material and food sold for immediate consumption, like booze or restaurant grub. 
+			<div class="triangle"></div>	
+			<div class="triangle"></div>
+			</article> 
+			<p id="slide1_chartext">- Tommy the Tomato, Genetically Modified Organism</p>
+		</section>
+
+		<!-- RELATED LINKS SLIDE HTML -->
+		<section id="related_links" class="slides">
+			<div id="link_bubble">
+				<span id="link_bubble_text">Want to know more about <strong><b>Prop 37</strong></b>? I hope so, because I called my tomato friends up and got all these links for you to look at! </span>
+			</div>
+			<div class="triangle" style="top:40px;left:478px;"></div>
+			<div id="linkbox">
+				<h2>Related Links</h2>
+				<ul>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/37-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/37-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+					<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#8"><li>California Report Info on Prop 37</li></a>
+					<a target="blank" href="http://www.carighttoknow.org/"><li>Supporters of Prop 37 Website</li></a>
+					<a target="blank" href="http://www.noprop37.com/"><li>Opponents of Prop 37 Website</li></a>
+				</ul>	
+			</div>
+			<img src="assets/tommy_rl.svg" id="link_image">
+		</section>
+		
+		<!-- INTERACTIVE SLIDE HTML -->
+		<section id="interactive_s2" class="slides">
+			<div id="interactive_textbox">
+				<span id="interactive_text">Let's start our journey at my local Martopia! Enter inside or explore the parking lot for more info!</span>
+			</div>
+			
+			<!-- BACKGROUND -->
+			<img id="background" src="assets/37_S2_BG3.png" width="860" height="640" alt="37 S2 BG">
+			<img id="martopia" src="">
+			
+			
+			<!-- CLICKABLES -->
+			<a onclick="gotoDatavizSlide();" href="#" rel="tooltip" title="Wanna see some numbers? Click here to drive over to our bubble chart. Way cool!"><img id="linkcar1" class="selectable" src="assets/37_S2_LinkCar12.png" width="141" height="67" alt="37 S2 LinkCar12"></a>
+			<a onclick="gotoLinksSlide();" href="#" rel="tooltip" title="Leaving already? Click here to drive over to the links at the end!"><img id="linkcar2" class="selectable" src="assets/37_S2_LinkCar22.png" width="142" height="66" alt="37 S2 LinkCar22"></a>
+			<a onclick="gotoVideoSlide();" href="#" rel="tooltip" title="Click me and I'll tell you all about GMO foods in my video. How exciting! I'm a movie star!"><img id="tommy" class="selectable" src="assets/37_S2_Tommy2.png" width="76" height="73" alt="37 S2 Tommy2"></a>
+			<a onclick="gotoMarketSlide();" href="#" rel="tooltip" title="Here you can enter inside Martopia. We'll see what foods will be affected by Prop 37. "><img id="doors" class="selectable" src="assets/doors.png" width="92" height="82" alt="Doors"></a>
+			<a href="#" rel="tooltip" title="Suzette supports Prop 37. She thinks everyone has a right to know what's in their food. She worries we don't know enough about the effect GMO foods have on her body."><img id="suzette" class="selectable" src="assets/suzette.png" width="19" height="64" alt="Suzette"></a>
+			<a href="#" rel="tooltip" title="Chuck here isn't keen on 37. He says the American Medical Association hasn't found any scientific justification to label foods. He also thinks the labeling would open companies up to lawsuits. On top of that, the prop might raise the prices at Martopia! Yipe!"><img id="chuck" class="selectable" src="assets/chuck.png" width="19" height="72" alt="Chuck"></a>
+			
+		
+		</section>
+		
+		<!-- SUPERMARKET SLIDE HTML -->
+		<section id="supermarket" class="slides">
+			<div id="supermarket_textbox">
+				<span id="supermarket_text"><strong><b>If Prop 37 passes, what will be labeled in stores?</strong></b></br></br><p id="supermarket_graf">Prop 37 includes several exemptions to the labeling requirement. These exceptions have drawn criticism that the proposed law serves special interests like the meat, dairy and alcohol industries. But advocates argue the labeling process will be easier by including exemptions.</br></br> Roll over the items below to find out more.</p></span>
+			</div>
+			
+			<!-- BACKGROUND -->
+			<img id="background" src="assets/supermarket.jpg">
+			
+			<!-- CLICKABLES -->
+			<a href="#" rel="tooltip" title="<strong><b>EXEMPT</strong></b></br>
+			Foods with indirect connections to GMOs are exempt from the labeling requirement. This means that foods made from animals who are fed or injected with genetically engineered material would not be labeled—including all dairy products like milk, cheese and yogurt."><img id="milk" class="selectable" src="assets/milk.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>LABELED</strong></b></br>
+			Processed foods—things like juice, soy milk and other products—made from genetically modified plants or animals would be labeled under the proposed law."><img id="juice" class="selectable" src="assets/juice.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>EXEMPT</strong></b></br>
+			A cow may be eating feed made from genetically modified ingredients, but the meat sold would not require a label, as long as the meat was for human consumption (pet food with such meat would require a label). However, if the animal itself was genetically engineered—like GMO salmon—it would be labeled"><img id="meat" class="selectable" src="assets/meat.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>LABELED</strong></b></br>
+			Any raw food, made from genetically modified plants or animals would be labeled as such under Prop 37, such as fruits and vegetables that have been engineered. These foods could no longer be labeled “natural.”"><img id="greens" class="selectable" src="assets/greens.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>EXEMPT</strong></b></br>
+			Certified organic foods would be exempt from the labeling requirement, since current organic standards do not allow any genetic modification."><img id="organic" class="selectable" src="assets/organic.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>EXEMPT</strong></b></br>
+			Alcohol that includes genetically engineered ingredients would not be labeled. Food sold for immediate consumption, like alcohol, and any food served in a restaurant, would be exempt from the Prop 37 labeling requirement."><img id="whiskey" class="selectable" src="assets/whiskey.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>EXEMPT</strong></b></br>
+			Food from foreign countries is exempt from labeling if the shipment is accompanied by a sworn statement declaring that the the product does not contain genetically engineered ingredients."><img id="flags" class="selectable" src="assets/flags.png"></a>
+		</section>
+		
+		<!-- VIDEO SLIDE HTML -->
+		<section id="video" class="slides">
+			<div id="37video">
+				<iframe width="740" height="416" src="http://www.youtube.com/embed/JPHhLV-kiFY?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>	
+		</section>
+		
+		<!-- DATAVIZ SLIDE HTML -->
+		<section id="dataviz" class="slides">
+			<div id="dataviz_textbox">
+				<span id="dataviz_text">Here are the companies who donated against Prop 37!</span>
+			</div>
+			
+		<!-- BACKGROUND -->
+		<img id="background" src="assets/bubblemapbg.png">
+		
+		<!-- CLICKABLES -->
+		
+				<!-- AGRICULTURE -->
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>Monsanto</br>
+				<strong><b>Amount Donated:</strong></b> $7,105,582"><img id="monsanto" class="selectable" src="assets/monsanto.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>Dow Agrisciences</br><strong><b>Amount 
+			Donated:</strong></b> $2,000,000"><img id="dow_sciences" class="selectable" src="assets/dow_sciences.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>BASF Plant Science</br><strong><b>Amount 
+		Donated:</strong></b> $2,000,000"><img id="basf" class="selectable" src="assets/basf.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Council for Biotechnology Information</br><strong><b>Amount Donated:</strong></b> $375,000"><img id="council_biotechinfo" class="selectable" src="assets/council_biotechinfo.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Ocean Spray Cranberries</br><strong><b>Amount Donated:</strong></b> $362,100"><img id="oceanspraycranberries" class="selectable" src="assets/oceanspraycranberries.png"></a>	
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Pioneer Hi-Bred International</br><strong><b>Amount Donated:</strong></b> $310,100"><img id="pioneer_hibred" class="selectable" src="assets/pioneer_hibred.png"></a>		
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Biotechnology Industry Organization</br><strong><b>Amount Donated:</strong></b> $252,000"><img id="biotech_industry_organization" class="selectable" src="assets/biotech_industry_organizaion.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Dole Packaged Foods</br><strong><b>Amount Donated:</strong></b> $171,261"><img id="dole" class="selectable" src="assets/dole.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Knouse Foods Cooperative</br><strong><b>Amount Donated:</strong></b> $135,831"><img id="knouse_foods" class="selectable" src="assets/knouse_foods.png"></a>
+
+				<!-- CHEMICAL -->
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> E.I. Dupont de Nemours and Co.</br><strong><b>Amount Donated:</strong></b> $4,900,000"><img id="dupont" class="selectable" src="assets/dupont.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Bayer Corpscience</br><strong><b>Amount Donated:</strong></b> $2,000,000"><img id="bayer" class="selectable" src="assets/bayer.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Syntega Corporation</br><strong><b>Amount Donated:</strong></b> $2,000,000"><img id="syntega" class="selectable" src="assets/syntega.png"></a>
+
+				<!--BEVERAGE -->
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Pepsico Inc.</br><strong><b>Amount Donated:</strong></b> $1,716,300"><img id="pepsico" class="selectable" src="assets/pepsico.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Coca-Cola North America</br><strong><b>Amount Donated:</strong></b> $1,174,400"><img id="coke" class="selectable" src="assets/coke.png"></a>
+
+				<!--FOOD PROCESSING -->
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Nestle USA</br><strong><b>Amount Donated:</strong></b> $1,169,400"><img id="nestleusa" class="selectable" src="assets/nestleusa.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Conagra Foods</br><strong><b>Amount Donated:</strong></b> $1,076,700"><img id="congra" class="selectable" src="assets/congra.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> General Mills</br><strong><b>Amount Donated:</strong></b> $908,200"><img id="general_mills" class="selectable" src="assets/general_mills.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Del Monte Foods</br><strong><b>Amount Donated:</strong></b> $74,100"><img id="delmontefoods" class="selectable" src="assets/delmontefoods.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Kellogg Company</br><strong><b>Amount Donated:</strong></b> $632,500"><img id="kelloggcompany" class="selectable" src="assets/kelloggcompany.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Hershey Company</br><strong><b>Amount Donated:</strong></b> $498,006"><img id="hersheyco" class="selectable" src="assets/hersheyco.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> The J.M. Smucker Company</br><strong><b>Amount Donated:</strong></b> $388,000"><img id="jmsmucker" class="selectable" src="assets/jmsmucker.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Grocery Manufacturers Association</br><strong><b>Amount Donated:</strong></b> $375,000"><img id="gorcery_manufactures_association" class="selectable" src="assets/gorcery_manufactures_association.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Hormel Foods</br><strong><b>Amount Donated:</strong></b> $374,300"><img id="hormelfoods" class="selectable" src="assets/hormelfoods.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Bumble Bee Foods</br><strong><b>Amount Donated:</strong></b> $368,500"><img id="bumblebeefoods" class="selectable" src="assets/bumblebeefoods.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Sara Lee</br><strong><b>Amount Donated:</strong></b> $343,600"><img id="saralee" class="selectable" src="assets/saralee.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Bimbo Bakeries</br><strong><b>Amount Donated:</strong></b> $338,300"><img id="bimbobakeries" class="selectable" src="assets/bimbobakeries.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Pinnacle Foods</br><strong><b>Amount Donated:</strong></b> $266,100"><img id="pinnaclefoods" class="selectable" src="assets/pinnaclefoods.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Dean Foods Company</br><strong><b>Amount Donated:</strong></b> $253,950"><img id="deanfoods" class="selectable" src="assets/deanfoods.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Campbell's Soup</br><strong><b>Amount Donated:</strong></b> $252,000"><img id="campbellssoup" class="selectable" src="assets/campbellssoup.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> McCorkmick and Company</br><strong><b>Amount Donated:</strong></b> $248,200"><img id="mccormickcompany" class="selectable" src="assets/mccormickcompany.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Wm. Wrigley Jr. Company</br><strong><b>Amount Donated:</strong></b> $237,664"><img id="wrigleyjr" class="selectable" src="assets/wrigleyjr.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Rich Products Corporation</br><strong><b>Amount Donated:</strong></b> $225,537"><img id="richproducts" class="selectable" src="assets/richproducts.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Cargill, Inc.</br><strong><b>Amount Donated:</strong></b> $202,229"><img id="cargillinc" class="selectable" src="assets/cargillinc.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Mars Food North America</br><strong><b>Amount Donated:</strong></b> $100,242"><img id="marsfood" class="selectable" src="assets/marsfood.png"></a>
+		</section>
+	
+	</div>
+</body>
+</html>

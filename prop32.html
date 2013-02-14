@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 32</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS--> 
+	<link href='css/prop32.css' rel='stylesheet' type='text/css'>
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop32.js" type="text/javascript" charset="utf-8"></script>
+
+
+	
+</head>
+<body>
+	<div id="container" class="">
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		 
+		<!-- START SLIDE HTML -->
+			<!-- SUMMARY SLIDE HTML -->
+				<div id="summary_slide" class="slides">
+					<div id="slide1bubble"></div> 
+					<div class="triangle"></div>
+					<img src="assets/Cornelius.svg" id="slide1Char">
+					<p id="summary_text" class="bubbletext"><strong><b>Prop 32</b></strong> would ban corporations and unions from using payroll deducted funds to make  contributions to state and local candidates. Government contractors would also be banned from contributing to politicians who awarded them contracts.</p> 
+			<p id="slide1_chartext">- Cornelius Moneybags III, Campaign-funding Gazillionaire</p>
+		</div>
+		
+		<!-- RELATED LINKS SLIDE HTML -->
+			<section id="related_links" class="slides">
+				<div id="link_bubble">
+					<span id="link_bubble_text">Want to know more about <strong><b>Prop 32</b></strong>? I should charge you for these links, but I'll be a nice moneybag and offer them for free...this time.</span>
+				</div>
+				<div class="triangle" style="left:478px;top:45px"></div>
+				<div id="linkbox">
+					<h2>Related Links</h2>
+					<ul>
+						<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/32-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+						<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/32-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+						<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#3"><li>California Report Info on Prop 32</li></a>
+						<a target="blank" href="http://yesprop32.com/"><li>Supporters of Prop 32 Website</li></a>
+						<a target="blank" href="http://www.stopspecialexemptions.org/"><li>Opponents of Prop 32 Website</li></a>
+					</ul>	
+				</div>
+				<img src="assets/corn_s2_39.svg" id="link_image">
+			</section>
+			
+		<!-- INTERACTIVE (SLIDE 2) SLIDE HTML -->
+	
+		<section id="trojan_s2" class="slides"> 
+				<div id="trojan_textbox">
+					<span id="trojan_text"><strong><b>Scroll around the screen to discover information about Prop 32.</b></strong></span>
+				</div>
+	
+
+			<!-- BACKGROUND -->
+			<img id="background" src="assets/campaign.jpg">
+			
+			
+			<!-- CLICKABLES -->
+		
+			<a href="#" rel="tooltip" title="<strong><b>Cutting the Source</b></strong><br>
+			• Automatic payroll deductions for political activities would be banned<br>
+			• Unions argue Prop 32 would seriously hamper their ability to raise money for politics as the above is their main way of doing so</b><br>
+			• Corporations and wealthy individuals, on the other hand, wouldn’t have their flow of political money cut off"><img id="union1" class="selectable" src="assets/union1.png"></a>
+						<a href="#" rel="tooltip" title="<strong><b>Unions vs Corporations</b></strong><br>
+						• Unions and voter rights organizations, like the League of Women Voters, oppose Prop 32<br>
+						• Corporations and business advocacy groups support Prop 32"><img id="union2" class="selectable" src="assets/union2.png"></a>
+						<a href="#" rel="tooltip" title="<strong><b>What About the Wealthy?</b></strong><br>
+						• Supporters of Prop 32 say the law would stop the flow of special-interest money in state elections, thereby limiting the influence of corporations and unions. <br> 
+						• The measure would not place limits on California’s wealthiest individuals, who spend millions in campaign contributions each year."><img id="yes" class="selectable" src="assets/yes.png"></a>
+						<a href="#" rel="tooltip" title="<strong><b>Citizen’s United</strong></b><br>
+						 • In 2010, the Supreme Court held that corporations and unions have the same political speech rights as individuals under the First Amendment. <br> 
+						• This decision banned state and local laws from restricting who can contribute to campaigns"><img id="union3" class="selectable" src="assets/union3.png"></a>
+						<a href="#" rel="tooltip" title="<strong><b>Trojan Horse</b></strong><br>
+						• Prop 32 is advertised as campaign finance reform, but critics say it would actually just limit the political power of unions, while enhancing that of business interests and wealthy individuals"><img id="horse" class="selectable" src="assets/horse.png"></a>
+						<a href="#" rel="tooltip" title="<strong><b>No Special Interests</strong></b><br>
+						• Prop 32 would not allow corporations or unions to make direct contributions to candidates and parties, but they could still spend money on ballot measures and independent expenditures.<br> 
+						• This could conflict with the infamous <em>Citizen’s United</em> Supreme Court decision"><img id="yes2" class="selectable" src="assets/yes2.png"></a>
+		</section>
+			
+		
+			<!-- QUIZ -->
+		
+			<section id="quiz_s4" class="slides">
+						<div id="quiz">
+							<iframe width="860" height="640" src="Slide4Quiz3.html" title="Slide4Quiz3"></iframe>
+							
+						</div>	
+									
+			</section>	
+			
+			<!-- DATAVIZ -->
+			
+					<section id="dataviz_s3" class="slides">
+						<div id="dataviz_textbox">
+							<span id="dataviz_text">Here we see the companies who donated against Prop 32. Indeed.</span>
+						</div>
+				
+				<!-- BACKGROUND -->
+				<img id="background" src="assets/bubblemapbg.png"/>
+				
+				
+				<!-- CLICKABLES -->	
+				
+				
+				<!-- EDUCATION -->
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California Teacher's Association</br><strong><b>Amount Donated:</strong></b> $20,214,056"><img id="calteachers" class="selectable" src="assets/calteachers.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California School Employees Association</br><strong><b>Amount Donated:</strong></b> $1,601,347"><img id="calschoolemployees" class="selectable" src="assets/calschoolemployees.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California Faculty Association</br><strong><b>Amount Donated:</strong></b> $1,556,638"><img id="calfaculty" class="selectable" src="assets/calfaculty.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California/American Federation of Teachers</br><strong><b>Amount Donated:</strong></b> $1,000,500"><img id="calamfedteachers" class="selectable" src="assets/calamfedteachers.png"></a>
+
+				<!--SAFETY -->
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California Professional Firefighters</br><strong><b>Amount Donated:</strong></b> $2,983,601"><img id="calprosfire" class="selectable" src="assets/calprosfire.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Peace Officers Research Association of California PAC</br><strong><b>Amount Donated:</strong></b> $1,476,846"><img id="peaceofficerspac" class="selectable" src="assets/peaceofficerspac.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> International Association of Firefighters</br><strong><b>Amount Donated:</strong></b> $500,000"><img id="internationalfire" class="selectable" src="assets/internationalfire.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California Statewide Law Enforcement Association</br><strong><b>Amount Donated:</strong></b> $426,552"><img id="callaw" class="selectable" src="assets/callaw.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Los Angeles Police Protective League's Public Safety First PAC</br><strong><b>Amount Donated:</strong></b> $250,000"><img id="lapolice" class="selectable" src="assets/lapolice.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Peace Officers Research Association</br><strong><b>Amount Donated:</strong></b> $250,000"><img id="peaceofficers" class="selectable" src="assets/peaceofficers.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> San Bernardino County Safety Employees' Benefit Association</br><strong><b>Amount Donated:</strong></b> $1,476,846"><img id="sanbern" class="selectable" src="assets/sanbern.png"></a>
+
+				<!--DEVELOPMENT -->
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Professional Engineers in California Government</br><strong><b>Amount Donated:</strong></b> $500,000"><img id="proengineers" class="selectable" src="assets/proengineers.png"></a> 
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California State Pipe Trades Council</br><strong><b>Amount Donated:</strong></b> $250,000"><img id="calpipes" class="selectable" src="assets/calpipes.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Northern California District Council of Laborers' Issues</br><strong><b>Amount Donated:</strong></b> $150,000"><img id="norcallabs" class="selectable" src="assets/norcallabs.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> State Building and Construction Trades Council of California</br><strong><b>Amount Donated:</strong></b> $129,718"><img id="statebuilding" class="selectable" src="assets/statebuilding.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> United Transportation Union</br><strong><b>Amount Donated:</strong></b> $105,000"><img id="unitedtrans" class="selectable" src="assets/unitedtrans.png"></a>
+
+				<!--HEALTH-->
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>California Nurses Association</br><strong><b>Amount Donated:</strong></b> $632,500"><img id="cna" class="selectable" src="assets/cna.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>United Domestic Workers of America</br><strong><b>Amount Donated:</strong></b> $100,000"><img id="uniteddomestic" class="selectable" src="assets/uniteddomestic.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> Union of American Physicians and Dentists</br><strong><b>Amount Donated:</strong></b> $100,000"><img id="unionphysdens" class="selectable" src="assets/unionphysdens.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California Association of Psychiatric Technicians</br><strong><b>Amount Donated:</strong></b> $100,000"><img id="calpsytech" class="selectable" src="assets/calpsytech.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> SEIU/California State Council of Service Employees</br><strong><b>Amount Donated:</strong></b> $11,470,256"><img id="seiu" class="selectable" src="assets/seiu.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> American Federation of State, County and Municipal Employees</br><strong><b>Amount Donated:</strong></b> $3,145,431"><img id="afscme" class="selectable" src="assets/afscme.png"></a>
+
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b> California Labor Federation (AFL-CIO/Change to Win)</br><strong><b>Amount Donated:</strong></b> $2,150,000"><img id="clf" class="selectable" src="assets/clf.png"></a>
+				
+				<!--OTHER-->
+				
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>Thomas Steyer </br><strong><b>Amount Donated:</strong></b> $500,000"><img id="yellowbig" class="selectable" src="assets/yellowbig.png"></a>
+				
+				<a href="#" rel="tooltip" title="<strong><b>Company Name:</strong></b></br>John Perez Ballot Measure Committee</br><strong><b>Amount Donated:</strong></b> $100,000"><img id="yellowsmall" class="selectable" src="assets/yellowsmall.png"></a>
+				
+				</div>
+			</section>
+			
+	</div>
+</body>
+</html>

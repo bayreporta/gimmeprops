@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 38</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS--> 
+	<link href='css/prop38.css' rel='stylesheet' type='text/css'>
+	<link href='css/taxfighter.css' rel='stylesheet' type='text/css'>
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop30-38.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/taxfighter.js" type="text/javascript" charset="utf-8"></script>
+	
+
+</head>
+<body onload="arrowCleaning();">
+	<div id="container">		 
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		 
+		<!-- START SLIDE HTML -->
+			<!-- SUMMARY SLIDE HTML -->
+				<div id="summary_slide" class="slides">
+					<div id="slide1bubble"></div> 
+					<img src="assets/willa.png" id="slide1Char">
+					<div class="triangle"></div>
+					
+					<article id="summary_text" class="bubbletext"><strong><b>Prop 38</b></strong> is the pet project of millionaire civil rights attorney Molly Munger. It would raise the income taxes on all but the poorest Californians. That revenue would go toward doling out grants to schools, bolstering early childhood care, and paying off bond debt. </article> 
+					<p id="slide1_chartext">- Willa the Billa, Recovering Vetoed Bill</p>
+				</div>
+					
+				<!-- TAX FIGHTER HTML -->	
+		<section id="taxfighter" class="slides">
+			<div id="backgroundtext"></div>
+
+			<!-- TUTORIAL AND SELECT MOVE -->
+			<div id="tutorial" class="taxslides">
+					<h1>Welcome to Tax Fighter!</h1>
+					<p><strong><b>What is this?</b></strong></p></br>
+					<p>This is the ultimate tax battle. <strong><b>Governor Jerry Brown</b></strong> and <strong><b>Millionaire Molly Munger</b></strong> both have competing plans -- <strong><b>Prop 30</b></strong> and <strong><b>Prop 38 respectively </b></strong> -- on how to tax Californians and best spend that money. With so many similarities between the two props, what makes them different? Enter Tax Fighter. </p></br>
+					<p><strong><b>How do I play?</b></strong></p></br>
+					<p>The goal is to figure out whether you lean toward any particular prop, to both of them, or to neither. You do this by choosing <strong><b>up to five statements</b></strong> that you agree with most. Based on what  you picked, you will see how you score. </p></br>
+					<button id="startbutton" onclick="startGame();clickSound('taxfighter/click.mp3');">Let's Do This!</button>
+			</div>
+			<div id="selectmove" class="taxslides">
+					<h1>It's On! Let the Battle Begin!</h1>
+					<p id="instruct">Select <strong><b>up to five statements</b></strong> you agree with.</p></br><br>
+					<form name="movelist">
+						<p><input type="checkbox" name="m1" onCLick="return KeepCount();" value="m1" id="m1"><span><strong><b>Pay If You Buy:</b></strong> Increase the sales tax</span> </p>
+						<p><input type="checkbox" name="m2" onCLick="return KeepCount();" value="m2" id="m2"><span><strong><b>Grants for Kids:</b></strong> Use tax revenue to dish out grants to K-12</span></p>
+						<p><input type="checkbox" name="m3" onCLick="return KeepCount();" value="m3" id="m3"><span><strong><b>K to CC:</b></strong> Use tax revenue for K-12 and Community Colleges</span></p>
+						<p><input type="checkbox" name="m4" onCLick="return KeepCount();" value="m4" id="m4"><span><strong><b>Slash, Not Tax:</b></strong> Cut spending first, don't raise taxes</span></p>
+						<p><input type="checkbox" name="m5" onCLick="return KeepCount();" value="m5" id="m5"><span><strong><b>Budgetpocalpyse:</b></strong> Stop planned $5.95 billion cuts</span></p>
+						<p><input type="checkbox" name="m6" onCLick="return KeepCount();" value="m6" id="m6"><span><strong><b>Get 'em Early:</b></strong> Use tax revenue for early childhood education</span></p>
+						<p><input type="checkbox" name="m7" onCLick="return KeepCount();" value="m7" id="m7"><span><strong><b>Sign the Pledge:</b></strong> No new taxes no matter what</span></p>
+						<p><input type="checkbox" name="m8" onCLick="return KeepCount();" value="m8" id="m8"><span><strong><b>Pay Your Debts:</b></strong> Use tax revenue to pay off bond debt</span></p>
+						<p><input type="checkbox" name="m9" onCLick="return KeepCount();" value="m9" id="m9"><span><strong><b>$6b Plan:</b></strong> Tax the incomes of the wealthiest Californians</span></p>
+						<p><input type="checkbox" name="m10" onCLick="return KeepCount();" value="m10" id="m10"><span><strong><b>Do Your Jobs:</b></strong> Politicians should deal with budgets</span></p>
+						<p><input type="checkbox" name="m11" onCLick="return KeepCount();" value="m11" id="m11"><span><strong><b>$10b Plan:</b></strong> Income tax up on all but the poorest </span></p>				
+					</form>
+					<button id="fight" onclick="checkMoves();clickSound('taxfighter/click.mp3');clapSound('taxfighter/clapping.mp3');">FIGHT!</button>
+			</div>
+
+			<!-- RESULTS -->
+			<div id="results"><button id="tovictory" onclick="toVictory();clickSound('taxfighter/click.mp3');">Check Your Score!</button></div>
+			<div id="resultstext"></div>
+
+			<!-- VICTORY SCREENS AND ASSETS -->
+			<div id="prop30" class="victory">
+							<h1 id="victoryh1">PROP 30</h1>
+							<div class="bubble"></div>
+							<div class="dialouge"></div>
+							<hr>
+							<img id="brownimg2" src="taxfighter/brownvictory.png" width="200">
+							<div id="bv1" class="explain explain1">
+								<h1>Pay If You Buy</h1>
+								<p>Prop 30 would raises the sales tax a quarter-of-a-percent to 7.50 percent until the 2016-2017 fiscal year. That means for every $100 dollars you spend, an extra quarter would be tacked on to the tax you already pay when buying something.</p>
+							</div>
+							<div id="bv2" class="explain explain2">
+								<h1>K to CC</h1>
+								<p>Billions of dollars would be made available for education. The breakdown: 89 percent of tax revenue would go to K-12 education. The other 11 percent would go to community colleges. The amount schools and colleges get is based on how many students there are enrolled. </p>
+							</div>
+							<div id="bv3" class="explain explain3">
+								<h1>Budgetpocalpyse</h1>
+								<p>Governor Jerry Brown built into the 2012-2013 budget an automatic $5.9 billion spending cut that would be triggered if Prop 30 fails. The vast majority of that cut would go to K-12 education and community colleges. Also included, public universities and CalFire.</p>
+							</div>
+							<div id="bv4" class="explain explain4">
+								<h1>$6 Billion Plan</h1>
+								<p>Californians who make more than $250,000 a year would pay anywhere between one to three percent more on their personal income taxes until fiscal year 2018-2019. This the additional income and sales tax and revenue combined would bring in an estimated $6 billion each year. </p>
+							</div>
+							<button id="previousbutton" class="previousbutton" onclick="resetGame2();uncheck();clickSound('taxfighter/click.mp3');">Back</button>
+							<button id="nextbutton" class="nextbutton" onclick="changeVictory();clickSound('taxfighter/click.mp3');">Next</button>
+			</div>
+			<div id="prop38" class="victory">
+							<h1 id="victoryh1">PROP 38</h1>
+							<div class="bubble"></div>
+							<div class="dialouge"></div>
+							<hr>
+							<img id="mungerimg2" src="taxfighter/mungervictory.png">
+							<div id="mv1" class="explain explain1">
+								<h1>Grants for Kids</h1>
+								<p>Money for K-12 would be dished out to schools in the form of grants. So 70 percent of new tax revenue would be doled out based on school population, 18 percent based on the number of low-income students at the school, and 12 percent in order to upgrade technology and teaching materials. </p>
+							</div>
+							<div id="mv2" class="explain explain2">
+								<h1>Get 'em Early</h1>
+								<p>A portion of tax revenue would go toward ECE programs, including expanding preschool for low-income families, restoring previous budget reductions to ECE programs, creating a Head Start for low-income families, and to pay state subsidized early care and education programs. </p>
+							</div>
+							<div id="mv3" class="explain explain3">
+								<h1>Pay Your Debts</h1>
+								<p>Up until the 2016-17 budget year, 30 percent of tax revenue would go to paying off state debt. Education debt costs for school facilities will be the priority, then any remaining funds would go to any other bond debts. There will be a growth limit on money for schools and ECE, so after 2016, whatever is left over will go to debt service. </p>
+							</div>
+							<div id="mv4" class="explain explain4">
+								<h1>$10b Plan</h1>
+								<p>All but the poorest Californians would have their personal income taxes raised until fiscal year 2024-2025. The new taxes would raise an estimated $10 billion on average each year, which could increase over time. In the first four years, the money would go to K-12 education (60 percent), Debt Service (30 percent), and Early Care and Education (10 percent). </p>
+							</div>
+							<button id="previousbutton" class="previousbutton" onclick="backVictory();clickSound('taxfighter/click.mp3');">Previous</button>
+							<button id="nextbutton" class="nextbutton" onclick="changeVictory();clickSound('taxfighter/click.mp3');">Next</button>
+
+			</div>
+			<div id="noprop" class="victory">
+							<h1 id="victoryh1">NO THX</h1>
+							<div class="bubble"></div>
+							<div class="dialouge"></div>
+							<hr>  
+							<img id="groverimg" src="taxfighter/grovervictory.png">
+							<div id="nv1" class="explain explain1">
+								<h1>Slash, Not Tax</h1>
+								<p>Conservatives tend to argue that budgetary problems are due to government spending more money than it can afford. Their solution is to cut spending, rather than raise tax revenue. This line of thought is directly opposite of both propositions. </p>
+							</div>
+							<div id="nv2" class="explain explain2">
+								<h1>Sign the Pledge</h1>
+								<p>Join the Republican party in signing Grover Norquist’s Taxpayer Protection Pledge, in which politicians promise to not raise income taxes on individuals or businesses. It also pledges to decrease tax deductions and credits unless there are equal spending cuts. Sorry, props 30 and 38. </p>
+							</div>
+							<div id="nv3" class="explain explain4">
+								<h1>Do Your Jobs</h1>
+								<p>A number of government observers and experts have argued that ballot-box budgeting, a pejorative term used to describe using the initiative process for budget matters, has caused many of California’s fiscal problems. the line of thought is that Sacramento should deal with the budget, not voters. </p>
+							</div>
+							<button id="previousbutton" class="previousbutton" onclick="backVictory();clickSound('taxfighter/click.mp3');">Previous</button>
+							<button id="nextbutton" class="nextbutton" onclick="resetGame();uncheck();clickSound('taxfighter/click.mp3');">Play Again?</button>
+			</div>
+
+
+			<!-- BACKGROUND ASSETS-->
+			<img id="background1" src="taxfighter/background1.png">
+			<img id="background2" src="taxfighter/background2.png">
+			<img id="background3" src="taxfighter/background3.png">
+			<img id="mungerimg" src="taxfighter/mungergame.png">
+			<img id="brownimg" src="taxfighter/browngame.png">	
+			<img id="brownsign" src="taxfighter/brownsign.png">	
+			<img id="mungersign" src="taxfighter/mungersign.png">
+			<span id='dummy'></span>
+		</section>			
+	</div>
+</body>
+</html>

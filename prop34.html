@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 34</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS-->
+	<link href='css/prop34.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop34.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/statesdata.js" type="text/javascript"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>	
+		
+	
+</head>
+<body onload="arrowCleaning();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		
+		<!-- START SLIDE HTML -->
+		<section id="summary_slide" class="slides">
+			<img src="prop34/nightshade_1.svg" id="slide1Char">
+			<div id="slide1bubble"></div>
+			<div class="triangle"></div>
+			<article id="summary_text" class="bubbletext"><strong><b>Prop 34</strong></b> would abolish the death penalty in California, leaving life in prison without parole as the worst punishment for a the most serious criminal offenses, like premeditated murder.</article> 
+			<p id="slide1_chartext">- Nightshade, Death Row Inmate Since 1988</p>
+		</section>
+
+	
+		
+		<!-- INTERACTIVE (SLIDE 2) SLIDE HTML -->
+		<section id="interactive_s2" class="slides">
+			<div id="interactive_textbox">
+				<span id="interactive_text">Scroll around the screen to discover information about Prop 34.</span>
+			</div>
+			
+			<!-- BACKGROUND -->
+			<img id="background" src="assets/background_s2_34.png">
+			<img id="fence" src="assets/fence_s2_34.png">
+			<img id="inmate2" src="assets/inmate2_s2_34.png">
+			<img id="small_character" src="assets/nightshade_small.png">
+			
+			<!-- CLICKABLES -->
+			<a href="#" rel="tooltip" title="<strong><b>Abolish Death Penalty</strong></b><br>
+			• All 729 inmates on death row would instead get life in prison without parole. Court appeals still pending in courts could still take several years to be resolved and cost the state about $1 million a year"><img id="deathrow" class="selectable" src="assets/deathrow_s2_34.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Cost Savings</strong></b><br>
+			• The state would save about $130 million a year by abolishing the death penalty, largely in legal costs due to death row appeals"><img id="inmate" class="selectable" src="assets/inmate_s2_34.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Cash for Cops</strong></b><br>
+			• Over several years, a total of $100 million would be given to local law enforcement as grants to help bolster homicide and rape investigations"><img id="cops" class="selectable" src="assets/cops_s2_34.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Victim Restitution</strong></b><br>
+			• Every person found guilty of murder would have to work while in prison, and their wages would be garnished to pay their victim’s family"><img id="job" class="selectable" src="assets/job_s2_34.png"></a>
+		</section>
+		
+		<!-- DEATH MAP SLIDE HTML -->
+		<section id="deathmap" class="slides">
+			
+			<iframe width="860" height="640" src="death_penalty_map.html" frameborder="0" scrolling="no" seamless="seamless"></iframe>
+			
+		</section>
+		
+		<!-- RELATED LINKS SLIDE HTML -->
+		<section id="related_links" class="slides">
+			<div id="link_bubble">
+				<span id="link_bubble_text">Want to know more about <strong><b>Prop 34</strong></b>? Get the skinny at the links below. But decide quickly, cause I'm running out of appeals.</span>
+			</div>
+			<div class="triangle" style="top:50px;left:478px"></div>
+			<div id="linkbox">
+				<h2>Related Links</h2>
+				<ul>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/34-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/34-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+					<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#5"><li>California Report Info on Prop 34</li></a>
+					<a target="blank" href="http://www.safecalifornia.org/"><li>Supporters of Prop 34 Website</li></a>
+					<a target="blank" href="http://waitingforjustice.net/"><li>Opponents of Prop 34 Website</li></a>
+				</ul>	
+			</div>
+			<img src="assets/nightshade_rl.svg" id="link_image">
+		</section>
+	</div>
+</body>
+</html>

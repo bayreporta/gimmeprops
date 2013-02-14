@@ -1,0 +1,562 @@
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}	
+
+#container {
+	width:860px;
+	height:640px;
+	background-color:#1E1E1E;
+}
+
+
+/* SLIDE STYLE */
+.slides {
+	width:860px;
+	height:640px;
+}
+
+/* TEXT IN BUBBLES STYLE */
+.bubbletext {
+	font-family:"open sans condensed","open sans","san serif";
+	font-weight:300;
+	font-size:20px;
+}
+
+/* TOOLTIP STLYE */
+	#tooltip {
+		position:absolute;
+		z-index:9999;
+		color:#fff;
+		font-size:13px;
+		line-height:20px;
+		word-spacing:1px;
+		width:180px;
+		font-family:"open sans","san serif";
+		opacity:0.7;
+		
+	}
+	a:hover {
+		text-decoration:none;
+	}
+
+	#tooltip .tipBody {
+		background-color:#1E1E1E;
+		padding:5px 9px 5px 15px;
+		border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
+
+/* ARROW PLACEMENT STYLES */
+	.right_arrow {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:810px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	.right_arrow_solid {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:810px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	.left_arrow {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:20px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	.left_arrow_solid {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:20px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	
+						/* INDIVIDUAL SLIDE STYLE */
+
+						#summary_slide {
+							display:block;
+						}
+								/* ADJUST POSITION BASED ON CHARACTER*/
+								#slide1Char {
+									position:absolute;
+									left:280px;
+									top:100px;
+								}
+									#slide1bubble {
+										width:497px;
+										height:140px;
+										border-radius:20px;
+										background:white;
+										position:absolute;
+										left:42px;
+										top:40px;
+									}
+
+									#summary_text {
+										left:52px;
+										top:49px;
+										width:464px;
+										height:192px;
+										position:absolute;
+										z-index:1;
+									}
+									.triangle {
+										width:0; 
+										height:0; 
+										border-top: 60px solid transparent;
+										border-bottom: 60px solid transparent;
+										border-left: 60px solid white;
+										z-index:999;
+										position:absolute;
+										left:487px;
+										top:100px;
+										transform:rotate(310deg);
+										-ms-transform:rotate(310deg); /* IE 9 */
+										-moz-transform:rotate(310deg); /* Firefox */
+										-webkit-transform:rotate(310deg); /* Safari and Chrome */
+										-o-transform:rotate(310deg); /* Opera */
+									}
+								#slide1_chartext {
+									color:white;
+									font-family:"open sans",helvetica,"san serif";
+									font-weight:700;
+									opacity:0.7;
+									position:absolute;
+									text-align:right;
+									left:340px;
+									top:612px;
+									width:500px;
+								}
+						/* RELATED LINKS SLIDE STYLE */		
+						#related_links {
+									display:none;
+							}		
+								#linkbox {
+									background: rgba(39,86,113,0.6);
+									width:361px;
+									height:300px;
+									border-radius:20px;
+									border: white 2px solid;
+									position:absolute;
+									left:80px;
+									top:194px;
+								}	
+								#linkbox h2 {
+									color:white;
+									width:361px;
+									text-align:center;
+									padding:5px 0px 0px 0px;
+									font-family:"open sans condensed","open sans","san serif";
+											font-size:30px;
+								}
+								#linkbox ul {
+									list-style-type:none;
+									padding:0px 0px 0px 20px;
+									margin-top:40px;
+								}
+								#linkbox li {
+									margin-bottom:10px;
+								}
+
+								#linkbox a {
+									text-decoration:none;
+									color:white;
+									font-family:"open sans","san serif";
+									font-size:16px;
+								}	
+								#linkbox a:hover {
+									color:#969696;
+								}
+								#link_bubble {
+									background:white;
+									width:487px;
+									height:105px;
+									border-radius:20px;
+									position:absolute;
+									left:41px;
+									top:20px;
+								}
+														#link_bubble_text {
+															font-family:"open sans condensed","open sans","sans serif";
+															font-size:20px;
+															position:absolute;
+															width:450px;
+															padding:15px 0px 0px 20px;
+														}						
+								#link_image {
+									position:absolute;
+									left:460px;
+									top:103px;
+									z-index:999;
+								}
+								
+						/* INTERACTIVE SLIDE STYLE */
+						#trojan_s2 {
+							display:none;
+						}
+
+								/* BACKGROUND/FIGURE STYLE */
+								#background {
+									z-index:0;
+									position:absolute;
+									left:0px;
+									top:0px;
+								}
+								#union1 {
+									position:absolute;
+									left:593px;
+									top:352px;
+									z-index:0;
+								}
+
+								#union2 {
+									position:absolute;
+									left:668px;
+									top:354px;
+									z-index:0;
+								}				
+
+								#union3 {
+									position:absolute;
+									left:748px;
+									top:337px;
+									z-index:0;
+								}	
+								#yes {
+									position:absolute;
+									left:45px;
+									top:175px;
+									z-index:0;
+								}
+								#horse {
+									position:absolute;
+									left:374px;
+									top:186px;
+									z-index:0;
+								}
+								#yes2 {
+									position:absolute;
+									left:170px;
+									top:319px;
+									z-index:0;
+								}
+							
+
+								#trojan_textbox {
+									position:absolute;
+									left:20px;
+									top:20px;
+									z-index:999;
+									background:#1E1E1E;
+									border:white 1px solid;
+									border-radius:20px;
+									width:350px;
+									height:100px;
+
+								}	
+								#trojan_text {
+									position:absolute;
+									left:45px;
+									top:40px;
+									z-index:999;
+									width:330px;
+									height:100px;
+									font-size:20px;
+									color:white;
+									font-family:"open sans condensed","san serif";
+								}
+						
+						/* QUIZ SLIDE STYLE */
+						#quiz_s4 {
+							display:none;
+						}
+
+						#frame{
+								width:760px;
+								height:400px;
+								border:1px solid #ccc;
+								background-image: url('../assets/BG_2.png');
+								overflow:hidden;
+
+								}   
+
+
+							#content{font:normal normal 1em/1.5em "Open Sans", Helvetica, Arial, sans-serif;margin:0 40px 10px;color:#FFFFFF} 
+							#quiz_s4 h1{
+								font:normal bold 2.9em/1.8em "Open Sans", Helvetica, Arial, sans-serif;
+								text-align:center;
+								color: #FFF;
+								background:rgb(30,87,153); /* Old browsers */
+								background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 47%, rgba(32,124,202,1) 93%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(47%,rgba(41,137,216,1)), color-stop(93%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* IE10+ */
+								background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+								padding:10px;
+								padding:0 15px;width:auto
+								}
+
+							#quiz_s4 h2{font:italic bold 1.5em/1.2em "open sans condensed", Helvetica, Arial, sans-serif;padding:5px 15px 15px; color:#FFFFFF} 
+							#quiz_s4 input[type=radio]{margin:0 10px 5px -22px;} label{margin:0 0 5px;}
+							#score p{font-size:0.95em; font-style:italic; color:#FFF; float:right;margin:5px 25px 0 0;}
+							#score:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+							#response{min-height:70px; margin:10px; line-height:2; color:#FFF}
+							#response h3{font:normal bold 1.7em/1.5em "open sans", Helvetica, Arial, sans-serif; margin:5px 0; color:#FFFFFF}
+
+
+							#desk{
+								width: 860px;
+								height:50px;
+								opacity: 0.3;
+								background: #DDD url('../assets/free_hires_wood_texture_5.jpeg') repeat/repeat-x/repeat-y/no-repeat scroll/absolute top/center/bottom/x-%/x-pos left/center/right/y-%/y-pos;
+								
+								z-index:0;}
+
+
+
+					
+						/* DATAVIZ SLIDE STYLE */
+						#dataviz_s3 {
+							display:none;
+						}
+						
+						#dataviz_textbox{
+							position:absolute;
+							left:10px;
+							top:10px;
+							z-index:999;
+							background:#1E1E1E;
+							border:white 1px solid;
+							border-radius:20px;
+							width:300px;
+							height:70px;
+						
+						}
+						
+						#dataviz_text{
+							position:absolute;
+							left:30px;
+							top:20px;
+							z-index:999;
+							width:280px;
+							height:100px;
+							font-size:20px;
+							color:white;
+							font-family:"open sans condensed","san serif";
+						}
+						
+							#background{
+								z-index:0;
+								color: #E8E4E2;
+							}
+
+							#calteachers {
+								position:absolute;
+								left:401px;
+								top:106px;
+								z-index:0;
+							}
+
+							#calschoolemployees {
+								position:absolute;
+								left:248px;
+								top:227px;
+								z-index:0;
+							}
+
+							#calfaculty {
+								position:absolute;
+								left:280px;
+								top:433px;
+								z-index:0;
+							}
+
+							#calamfedteachers {
+								position:absolute;
+								left:356px;
+								top:118px;
+								z-index:0;
+							}
+
+							#calprosfire {
+								position:absolute;
+								left:312px;
+								top:263px;
+								z-index:0;
+							}
+
+							#peaceofficerspac {
+								position:absolute;
+								left:223px;
+								top:302px;
+								z-index:0;
+							}
+
+							#internationalfire {
+								position:absolute;
+								left:622px;
+								top:308px;
+								z-index:0;
+							} 
+
+							#callaw {
+								position:absolute;
+								left:340px;
+								top:493px;
+								z-index:0;
+							} 
+
+							#lapolice {
+								position:absolute;
+								left:413px;
+								top:326px;
+								z-index:0;
+							}
+
+							#peaceofficers {
+								position:absolute;
+								left:256px;
+								top:414px;
+								z-index:0;
+							}
+
+							#sanbern {
+								position:absolute;
+								left:391px;
+								top:357px;
+								z-index:0;
+							} 
+
+							#proengineers {
+								position:absolute;
+								left:560px;
+								top:448px;
+								z-index:0;
+							} 
+
+							#calpipes {
+								position:absolute;
+								left:242px;
+								top:380px;
+								z-index:0;
+							} 
+
+							#norcallabs {
+								position:absolute;
+								left:427px;
+								top:112px;
+								z-index:0;
+							} 
+
+							#statebuilding {
+								position:absolute;
+								left:535px;
+								top:364px;
+								z-index:0;
+							} 
+
+							#unitedtrans {
+								position:absolute;
+								left:295px;
+								top:169px;
+								z-index:0;
+							} 
+
+							#cna {
+								position:absolute;
+								left:274px;
+								top:354px;
+								z-index:0;
+							} 
+
+							#uniteddomestic {
+								position:absolute;
+								left:360px;
+								top:383px;
+								z-index:0;
+							} 
+
+							#unionphysdens {
+								position:absolute;
+								left:301px;
+								top:335px;
+								z-index:0;
+							} 
+
+
+							#calpsytech {
+								position:absolute;
+								left:351px;
+								top:471px;
+								z-index:0;
+							} 
+
+
+							#seiu {
+								position:absolute;
+								left:366px;
+								top:354px;
+								z-index:0;
+							} 
+
+
+							#afscme {
+								position:absolute;
+								left:562px;
+								top:345px;
+								z-index:0;
+							} 
+
+							#clf {
+								position:absolute;
+								left:309px;
+								top:171px;
+								z-index:0;
+							}
+							
+							#yellowbig {
+								position:absolute;
+								left:264px;
+								top:183px;
+								z-index:0;
+							} 
+
+							#yellowsmall {
+								position:absolute;
+								left:374px;
+								top:367px;
+								z-index:0;
+							}

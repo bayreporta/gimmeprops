@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	
+	<script src="raphael-min.js"></script>
+	<script>
+		window.onload = function() {
+			var paper = new Raphael(document.getElementById('container'), 2000,2000);
+			/*
+			var shell = paper.rect(0,0,1000,1000);
+						
+						shell.attr({
+							fill:"#275671"
+							 
+						})*/
+			/*
+			var shell = paper.path("M 0 0 l 0 850 l 900 0 l 0 -680 l -700 0 l 0 -170 l -200 0 z");
+						shell.attr({
+							fill:"#275671",
+							'stroke-width':0
+						})*/
+			var shell = paper.path("M 0 10 v 0 840 h 900 0 v 0 -680 h -700 0 v 0 -170 h -190 0 z");
+			shell.attr({
+						fill:"#275671",
+						'stroke-width':0
+			})
+			
+		}
+		
+	
+	</script>
+	<style type="text/css" media="screen">
+		#container {
+			width:2000px;
+			height:2000px;
+			
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="container"></div>
+</body>
+</html>

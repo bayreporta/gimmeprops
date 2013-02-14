@@ -1,0 +1,754 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com, modified by Erik Reyna for GimmeProps! 2012)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+margin: auto auto;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #dcdcd1;
+    text-shadow: none;
+}
+
+::selection {
+    background: #dcdcd1;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+	padding: 10px 10px 25px 10px;
+	margin: 10px;
+	background: #eee;
+	border: 1px solid #ffffff;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template,
+	Thanks Jonathan! - GimmeProps! 2012 team
+   ========================================================================== */
+
+body {
+    font-family:'Open Sans', serif;
+	font: 16px/26px;
+}
+
+p {
+	font-family:'Alegreya', serif;
+	font: 16px/26px;
+}
+
+.main-container {
+	z-index: -20;
+	position: fixed;
+	top: 0px;
+}
+
+/* ===================
+    ALL: Gray Theme
+   =================== */
+
+.header-container {
+	padding: 20px 0 13px 0;
+}
+
+.footer-container {
+	z-index: 20;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 860px;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+	z-index: 20;
+}
+
+.title {
+    color: #222222;
+}
+
+.people {
+	
+}
+
+.people ul, .people li {
+	display: inline;
+}
+
+img.bits{
+	background: transparent;
+	padding: 0px;
+	margin: 0px;
+	border: 0px solid #fff;
+	
+}
+
+.social {
+}
+
+.social p {
+	display: inline;
+	}
+
+.social ul {
+	float: left;
+	display: inline;
+	margin: 21px 0px 0px 35px;
+	padding: 0;
+	}
+	
+.social li {
+	display: inline;
+}
+	
+.social h2 {
+	float: left;
+}
+
+img.icons {
+	background: transparent;
+	border: 0px solid #fff;
+	margin: 0px;
+	padding: 0px;
+	width: 30px;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 8px 0 0 0;
+    display: inline;
+
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li button {
+	display: inline;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #8f8f88;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+}
+
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: #ffffff;
+    padding: 0px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   GimmeProps! 2012 custom styles
+   ========================================================================== */
+
+/*image float left*/
+img.left
+{
+        float: left; /*left in our text*/
+        margin: 10px; /*space around the image*/
+}
+
+/*image float right*/
+img.right
+{
+         float: right; /*right in our text*/
+         margin: 10px; /*space around the image*/
+}
+
+/* clearfix for the image floats*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+	clear: right;
+}
+
+/*prop navigation*/
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+
+
+    nav a {
+		padding: 25px;
+        width: 27%;
+        margin-bottom: 0;
+    }
+
+	nav ul li {
+		display: inline;
+	}
+	
+    
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+	.header-container{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height:1000px; //-----//
+		z-index: 40;
+   }
+
+    .header-container-about{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+    }
+
+    nav {
+        width: 100%;
+    }
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 100%;
+		padding: 91px 0px;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+	
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 865px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+    .wrapper-footer {
+        width: 860px; /* 1140px - 10% for margins */
+    }
+
+.window {
+	position: relative;
+	width:900px;
+	height:1000px;
+	top: 0%;
+	left: 50%;
+	height:1000px;
+	margin-top: 8px;
+	margin-left: -450px;
+	padding-top: 143px;
+
+	background-color: #152F3E;
+	padding-right: 40px;
+	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius-right: 0x;
+	
+}
+
+.center {
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+/*	height:100%;*/
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+/*
+    height: auto;
+*/
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+ 
+.button {
+	box-sizing:content-box;
+	padding:0;
+	margin:0;
+	width:58px;
+	height:64px;
+	position:relative;
+	display:inline;
+	background:none;
+	border:none;
+	outline:none;
+}
+
+#button_first {
+	box-sizing:content-box;
+	padding:0;
+	margin:0;
+	width: 120px;
+	height: 74px;
+	position:relative;
+	display:inline;
+	background:none;
+	border:none;
+	outline:none;
+}
+ 
+/* 'before' pseudo-element for button perspective*/
+.button:before{
+	box-sizing:content-box;
+	content: '';
+	display: block;
+	position: absolute;
+	z-index:-2;
+	top: 0;
+	left: 0;
+	width: 58px;
+	height: 52px;
+	background: #377fa3;
+	border-radius: 6px 6px 12px 12px;
+	box-shadow: 0px 5px 2px rgba(60, 60, 60, 0.69);
+	padding-bottom: 8px;
+}
+ 
+#button_first:before{
+	box-sizing:content-box;
+	content: '';
+	display: block;
+	position: absolute;
+	z-index:-2;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 74px;
+	background: #377fa3;
+	border-radius: 6px 6px 12px 12px;
+	box-shadow: 0px 5px 2px rgba(60, 60, 60, 0.69);
+	padding-bottom: 8px;
+}
+
+/* 'after' pseudo-element for button surface */
+.button:after{
+	box-sizing:content-box;
+	content: '';
+	position:absolute;
+	z-index:-1;
+	width:54px;
+	height:52px;
+	left:1px;
+	top:1px;
+	background:#4496c5;
+	border-radius:5px;
+	border:1px solid #61a1bf;
+ 
+   /* fallback/image non-cover color */
+   background-color: #63a7cc; 
+ 
+   /* fallback image */
+   background-image: url('http://i43.tinypic.com/2a5166u.png'); 
+ 
+   /* Safari 4+, Chrome 1-9 */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#63a7cc), to(#3e89b2));
+ 
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -webkit-linear-gradient(top, #63a7cc, #3e89b2); 
+ 
+   /* Firefox 3.6+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -moz-linear-gradient(top, #63a7cc, #3e89b2);
+ 
+   /* IE 10+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -ms-linear-gradient(top, #63a7cc, #3e89b2);
+ 
+   /* Opera 11.10+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -o-linear-gradient(top, #63a7cc, #3e89b2);
+}
+
+#button_first:after{
+	box-sizing:content-box;
+	content: '';
+	position:absolute;
+	z-index:-1;
+	width:116px;
+	height:74px;
+	left:1px;
+	top:1px;
+	background:#4496c5;
+	border-radius:5px;
+	border:1px solid #61a1bf;
+ 
+   /* fallback/image non-cover color */
+   background-color: #63a7cc; 
+ 
+   /* fallback image */
+   background-image: url('http://i43.tinypic.com/2a5166u.png'); 
+ 
+   /* Safari 4+, Chrome 1-9 */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#63a7cc), to(#3e89b2));
+ 
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -webkit-linear-gradient(top, #63a7cc, #3e89b2); 
+ 
+   /* Firefox 3.6+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -moz-linear-gradient(top, #63a7cc, #3e89b2);
+ 
+   /* IE 10+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -ms-linear-gradient(top, #63a7cc, #3e89b2);
+ 
+   /* Opera 11.10+ */
+   background:url('http://i43.tinypic.com/2a5166u.png'), -o-linear-gradient(top, #63a7cc, #3e89b2);
+}
+ 
+.button p{
+	display:inline-block;
+	padding-bottom:8px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	font-family: 'Myriad Pro';
+	letter-spacing: 1px;
+	text-shadow: -1px -1px #494949;
+}
+
+.button_first p{
+	display:inline-block;
+	padding-bottom:8px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	font-family: 'Myriad Pro';
+	letter-spacing: 1px;
+	text-shadow: -1px -1px #494949;
+}
+
+
+/* ------------------------- */
+/* HOVER & MOUSE DOWN EVENTS */
+/* ------------------------- */
+ 
+.button:hover{cursor:pointer;}
+ 
+.button:hover:before{background:#3883a5;}
+ 
+.button:hover:after{
+ 
+	/* Safari 4+, Chrome 1-9 */
+	background:url('http://i43.tinypic.com/2a5166u.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#70afd1), to(#428eb7));
+ 
+	/* Safari 5.1+, Mobile Safari, Chrome 10+ */
+	background:url('http://i43.tinypic.com/2a5166u.png'), -webkit-linear-gradient(top, #70afd1, #428eb7); 
+ 
+	/* Firefox 3.6+ */
+	background:url('http://i43.tinypic.com/2a5166u.png'), -moz-linear-gradient(top, #70afd1, #428eb7);
+ 
+	/* IE 10+ */
+	background:url('http://i43.tinypic.com/2a5166u.png'), -ms-linear-gradient(top, #70afd1, #428eb7);
+ 
+	/* Opera 11.10+ */
+	background:url('http://i43.tinypic.com/2a5166u.png'), -o-linear-gradient(top, #70afd1, #428eb7);
+}
+ 
+/* You can use 'active' for a Mouse Down event */
+#button_first:active:before{
+	width: 117px;	
+	margin-top: 4px;
+ 	left: 3px;
+	padding-bottom: 3px;
+	border-radius: 6px;
+	box-shadow: 2px 2px 5px rgba(60, 60, 60, 0.69), -2px -2px 5px rgba(60, 60, 60, 0.69);
+}
+ 
+#button_first:active:after{
+	width: 115px;
+	height: 74px;
+	top: 5px;
+	left: 4px;
+	border: none;
+}
+ 
+#button_first:active p{
+	position:relative;
+	top:4px;
+	left:2px;
+	}
+
+.button:active:before{
+	width: 54px;	
+	margin-top: 4px;
+ 	left: 3px;
+	padding-bottom: 3px;
+	border-radius: 6px;
+	box-shadow: 2px 2px 5px rgba(60, 60, 60, 0.69), -2px -2px 5px rgba(60, 60, 60, 0.69);
+}
+ 
+.button:active:after{
+	width: 52px;
+	height: 52px;
+	top: 5px;
+	left: 4px;
+	border: none;
+}
+ 
+.button:active p{
+	position:relative;
+	top:4px;
+	left: 2px;
+	}
+	
+/* ==========================================================================
+   IFRAME styles
+   ========================================================================== */	
+iframe {
+	position:relative;
+	left:20px;
+	top:-31px;
+	width:860px;
+	height:640px;
+}	
+

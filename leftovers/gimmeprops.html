@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gimme Props</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	
+		var slidesLength = {
+			"34": {"number of bullets": 3, }
+			
+		};
+		
+		var curProp = 0;
+		
+		$(document).ready(function(){
+			
+			//this is the function when people click on a prop in the top nav
+			$('#navigation a').click(function(){
+				$('iframe').attr('src', $(this).attr('href'));
+				
+				curProp = ($(this).attr('href')).substring(4, 6);
+				//* NEED TO SHOW/HIDE BULLET POINTS *//
+				document.getElementById
+				
+				
+				//* NEED To ESTABLISH CODE FOR SLIDE NAVIGATION LINKED TO BULLETS *//
+				
+				
+				return false;
+			})
+			
+			
+			$('#bottom_nav a').click(function(){
+				document.getElementById('gimmeprops').contentWindow.slideNext()
+			})
+			
+		});
+		
+		
+		
+	</script>
+	<style type="text/css" media="screen">
+		#navigation{
+			width:860px;
+			height:30px;
+			background:red;
+		}
+		#bottom_nav{
+			width:860px;
+			height:30px;
+			background:blue;
+			margin:0px;
+			padding:0px;
+		}
+		a{color:black}
+		
+		iframe {
+			padding:0px;
+			margin:0px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<div id="navigation">
+		<a href="prop32.html">Prop 32</a>
+		<a href="prop33.html">Prop 32</a>
+		<a href="prop34.html">Prop 32</a>
+		<a href="prop35.html">Prop 32</a>
+		<a href="prop36.html">Prop 32</a>
+		<a href="prop37.html">Prop 32</a>
+		<a href="prop38.html">Prop 32</a>
+	</div>
+	
+		<iframe src="prop33.html" width="860" height="640" scrolling="no" frameborder="0" fullscreen="true" id="gimmeprops"></iframe>
+	
+	<div id="bottom_nav">
+		<a href="#">&bull;</a>
+		<a href="#">&bull;</a>
+		<a href="#">&bull;</a>
+		<a href="#">&bull;</a>
+		<a href="#">&bull;</a>
+		<a href="#">&bull;</a>
+	</div>
+	
+	
+</body>
+</html>

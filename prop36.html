@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 36</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS-->
+	<link href='css/prop36.css' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop36.js" type="text/javascript" charset="utf-8"></script>
+	
+
+	
+	
+</head>
+<body onload="arrowCleaning();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		
+		<!-- START SLIDE HTML -->
+		<section id="summary_slide" class="slides">
+			<img src="prop34/nightshade_1.svg" id="slide1Char">
+			<div id="slide1bubble"></div>
+			<div class="triangle"></div>
+			<article id="summary_text" class="bubbletext"><strong><b>Prop 36</strong></b> would reform the 18-year-old “three strikes law” for a person  convicted of a third strike. Unless you commit a serious, violent felony, or the crime falls into one of the listed exceptions, a third striker would only get double the usual sentence for a crime instead of the 25 years to life set in the current three strikes law. </article> 
+			<p id="slide1_chartext">- Nightshade, Serial Inmate and Prison Expert</p>
+		</section>
+		
+		<!-- FLOWCHART SLIDE HTML -->
+		<section id="flowchart_s3" class="slides">
+			<div id="flowchart_textbox">
+				<span id="flowchart_text">With two felony convictions, what would count as a “third strike” under Prop 36?</span>
+			</div>
+			<img id="flowchart" src="assets/threestrikes_flowchart.png">
+			
+		</section>	
+		
+		
+		<!-- RELATED LINKS SLIDE HTML -->
+		<section id="related_links" class="slides">
+			<div id="link_bubble">
+				<span id="link_bubble_text">Want to know more about <strong><b>Prop 36</strong></b>? Click on any of the links below to learn more about the Three Strikes Law and how this could impact that law. </span>
+			</div>
+			<div class="triangle" style="top:50px;left:478px"></div>
+			<div id="linkbox">
+				<h2>Related Links</h2>
+				<ul>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/36-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/36-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+					<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#7"><li>California Report Info on Prop 36</li></a>
+					<a target="blank" href="http://www.yeson36.org/"><li>Supporters of Prop 36 Website</li></a>
+					<a target="blank" href="http://www.savethreestrikes.com/"><li>Opponents of Prop 36 Website</li></a>
+				</ul>	
+			</div>
+			<img src="assets/nightshade_rl.svg" id="link_image">
+		</section>
+
+		<!-- INTERACTIVE (SLIDE 2) SLIDE HTML -->
+		<section id="interactive_s2" class="slides">
+			<div id="interactive_textbox">
+				<span id="interactive_text">Scroll around the screen to discover information about Prop 36.</span>
+			</div>
+			
+			<!-- BACKGROUND -->
+			<img id="background" src="assets/background_s2_36.png">
+			<img id="desk" src="assets/desk_s2_36.png">
+			<img id="window" src="assets/window_s2_36.png">
+			<img id="man" src="assets/man_s2_36.png">
+			<img id="book" src="assets/book_s2_36.png">
+			<img id="small_character" src="assets/nightshade_small.png">
+			
+			
+			<!-- CLICKABLES -->
+			<a href="#" rel="tooltip" title="<strong><b>Resentencing</strong></b>
+			Already convicted three strikers who believe they are eligible for a sentence reduction can take their cases to the courts. This is expected to cause a flurry of legal activity over the next few years"><img id="lawyer" class="selectable" src="assets/lawyer_s2_36.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Violent Repeat Offender</strong></b>
+			If a third striker is convicted of rape, murder, or child molestation, they still get a 25 to life sentence"><img id="red" class="selectable" src="assets/red_s2_36.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>What Counts?</strong></b>
+			Not all third strike cases involving non-serious, nonviolent felonies would result in a reduced sentence. A number of crimes, like drug manufacturing, spousal rape, and sex with a minor would still earn a third striker 25 years-to-life"><img id="cop" class="selectable" src="assets/cop_s2_36.png"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Cost Savings</strong></b>
+			The prop could save about $70 to $90 million a year due to reduced prison costs. A few million dollars would have to be spent on court activity related to resentencing cases for people already convicted of three strikes"><img id="money" class="selectable" src="assets/money_s2_36.png"></a>
+		</section>	
+	</div>
+</body>
+</html>

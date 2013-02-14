@@ -1,0 +1,677 @@
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}	
+
+#container {
+	width:860px;
+	height:640px;
+	background-color:#1E1E1E;
+}
+
+
+/* SLIDE STYLE */
+.slides {
+	width:860px;
+	height:640px;
+}
+
+/* TEXT IN BUBBLES STYLE */
+.bubbletext {
+	font-family:"open sans condensed","open sans","san serif";
+	font-weight:300;
+	font-size:20px;
+}
+
+/* TOOLTIP STLYE */
+	#tooltip {
+		position:absolute;
+		z-index:9999;
+		color:#fff;
+		font-size:13px;
+		line-height:20px;
+		word-spacing:1px;
+		width:180px;
+		font-family:"open sans","san serif";
+		opacity:0.7;
+		
+	}
+	a:hover {
+		text-decoration:none;
+	}
+
+	#tooltip .tipBody {
+		background-color:#1E1E1E;
+		padding:5px 9px 5px 15px;
+		border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
+
+/* ARROW PLACEMENT STYLES */
+	.right_arrow {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:810px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	.right_arrow_solid {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:810px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	.left_arrow {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:20px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	.left_arrow_solid {
+		display:none;
+		position:absolute;
+		top:300px;
+		left:20px;
+		padding:0px;
+		margin:0px;
+		z-index:1;
+	}
+	
+						/* INDIVIDUAL SLIDE STYLE */
+
+						#summary_slide {
+							display:block;
+						}
+							
+						#background {	
+							z-index:0;
+						}
+						
+						
+								/* ADJUST POSITION BASED ON CHARACTER*/
+								#slide1Char {
+									position:absolute;
+									left:195px;
+									top:150px;
+								}
+								.triangle {
+									width:0; 
+									height:0; 
+									border-top: 60px solid transparent;
+									border-bottom: 60px solid transparent;
+									border-left: 60px solid white;
+									z-index:999;
+									position:absolute;
+									left:498px;
+									top:120px;
+									transform:rotate(310deg);
+									-ms-transform:rotate(310deg); /* IE 9 */
+									-moz-transform:rotate(310deg); /* Firefox */
+									-webkit-transform:rotate(310deg); /* Safari and Chrome */
+									-o-transform:rotate(310deg); /* Opera */
+								}
+								#slide1bubble {
+									width:560px;
+									height:200px;
+									border-radius:20px;
+									background:white;
+									position:absolute;
+									left:35px;
+									top:32px;
+								}
+
+								#summary_text {
+									left:46px;
+									top:40px;
+									width:520px;
+									height:185px;
+									position:absolute;
+									z-index:1;
+								}
+								#slide1_chartext {
+									color:white;
+									font-family:"open sans",helvetica,"sans serif";
+									font-weight:700;
+									opacity:0.7;
+									position:absolute;
+									text-align:right;
+									left:340px;
+									top:612px;
+									width:500px;
+								}
+								
+						/* RELATED LINKS SLIDE STYLE */		
+						#related_links {
+							display:none;
+						}		
+								#linkbox {
+									background: rgba(39,86,113,0.6);
+									width:361px;
+									height:300px;
+									border-radius:20px;
+									border: white 2px solid;
+									position:absolute;
+									left:80px;
+									top:194px;
+								}	
+								#linkbox h2 {
+									color:white;
+									width:361px;
+									text-align:center;
+									padding:5px 0px 0px 0px;
+									font-family:"open sans condensed","open sans","san serif";
+									font-size:30px;
+								}
+								#linkbox ul {
+									list-style-type:none;
+									padding:0px 0px 0px 20px;
+									margin-top:40px;
+								}
+								#linkbox li {
+									margin-bottom:10px;
+								}
+								#linkbox a {
+									text-decoration:none;
+									color:white;
+									font-family:"open sans","san serif";
+									font-size:16px;
+								}	
+								#linkbox a:hover {
+									color:#969696;
+								}
+								#link_bubble {
+									background:white;
+									width:487px;
+									height:100px;
+									border-radius:20px;
+									position:absolute;
+									left:41px;
+									top:20px;
+								}
+															#link_bubble_text {
+																font-family:"open sans condensed","open sans","san serif";
+																font-size:20px;
+																position:absolute;
+																width:450px;
+																padding:15px 0px 0px 20px;
+															}						
+								#link_image {
+									position:absolute;
+									left:469px;
+									top:141px;
+									z-index:999;
+								}	
+								
+						/* INTERACTIVE (SLIDE 2) SLIDE STYLE */
+						#interactive_s2 {
+							display:none;
+						}
+						
+								#background {
+									z-index:;
+								}
+								#linkcar1 {
+									position:absolute;
+									left:593px;
+									top:527px;
+									z-index:0;
+								}
+
+								#linkcar2 {
+									position:absolute;
+									left:676px;
+									top:475px;
+									z-index:0;
+								}				
+
+								#tommy {
+									position:absolute;
+									left:306px;
+									top:552px;
+									z-index:0;
+								}	
+								#doors {
+									position:absolute;
+									left:265px;
+									top:392px;
+									z-index:0;
+								}
+								#suzette {
+									position:absolute;
+									left:438px;
+									top:524px;
+									z-index:0;
+								}
+								#chuck {
+									position:absolute;
+									left:218px;
+									top:439px;
+									z-index:0;
+								}
+							
+
+								#interactive_textbox {
+									position:absolute;
+									left:10px;
+									top:10px;
+									z-index:999;
+									background:#1E1E1E;
+									border:white 1px solid;
+									border-radius:20px;
+									width:300px;
+									height:100px;
+
+								}	
+								#interactive_text {
+									position:absolute;
+									left:20px;
+									top:20px;
+									z-index:999;
+									width:280px;
+									height:100px;
+									font-size:20px;
+									color:white;
+									font-family:"open sans condensed","san serif";
+								}
+						/* SUPERMARKET SLIDE STYLE */		
+						#supermarket {
+							display:none;
+						}
+						
+							#background {
+								z-index:;
+							}
+							#milk {
+								position:absolute;
+								left:224px;
+								top:162px;
+								z-index:0;
+							}
+
+							#juice {
+								position:absolute;
+								left:448px;
+								top:162px;
+								z-index:0;
+							}				
+
+							#meat {
+								position:absolute;
+								left:664px;
+								top:211px;
+								z-index:0;
+							}	
+							#greens {
+								position:absolute;
+								left:60px;
+								top:426px;
+								z-index:0;
+							}
+							#organic {
+								position:absolute;
+								left:264px;
+								top:427px;
+								z-index:0;
+							}
+							#whiskey {
+								position:absolute;
+								left:477px;
+								top:378px;
+								z-index:0;
+							}
+							#flags {
+								position:absolute;
+								left:600px;
+								top:409px;
+								z-index:0;
+							}
+
+							#supermarket_textbox {
+								position:absolute;
+								left:101px;
+								top:10px;
+								z-index:999;
+								background:#1E1E1E;
+								border:white 1px solid;
+								border-radius:20px;
+								width:660px;
+								height:140px;
+
+							}	
+							#supermarket_text {
+								position:absolute;
+								left:111px;
+								top:20px;
+								z-index:999;
+								width:650px;
+								height:150px;
+								font-size:16px;
+								color:white;
+								font-family:"open sans condensed","san serif";
+							}
+							
+							#supermarket_graf {
+								font-size:14px;
+							}											
+						
+						/* RELATED LINKS SLIDE STYLE */		
+						#dataviz {
+							display:none;
+						}
+						
+						#dataviz_textbox{
+							position:absolute;
+							left:10px;
+							top:10px;
+							z-index:999;
+							background:#1E1E1E;
+							border:white 1px solid;
+							border-radius:20px;
+							width:300px;
+							height:70px;
+						
+						}
+						
+						#dataviz_text{
+							position:absolute;
+							left:30px;
+							top:10px;
+							z-index:999;
+							width:280px;
+							height:100px;
+							font-size:20px;
+							color:white;
+							font-family:"open sans condensed","san serif";
+						}
+						
+						#background{
+							z-index:0;
+						}
+						
+						#monsanto {
+							position:absolute;
+							left:336px;
+							top:100px;
+							z-index:0;
+						}
+						
+						#dow_sciences {
+							position:absolute;
+							left:453px;
+							top:272px;
+							z-index:0;
+						}
+						
+						#basf {
+							position:absolute;
+							left:254px;
+							top:204px;
+							z-index:0;
+						}
+						
+						#council_biotechinfo {
+							position:absolute;
+							left:524px;
+							top:379px;
+							z-index:0;
+						}
+						
+						#oceanspraycranberries {
+							position:absolute;
+							left:311px;
+							top:461px;
+							z-index:0;
+						}
+						
+						#pioneer_hibred {
+							position:absolute;
+							left:217px;
+							top:207px;
+							z-index:0;
+						}
+						
+						#biotech_industry_organization {
+							position:absolute;
+							left:404px;
+							top:505px;
+							z-index:0;
+						} 
+						
+						#dole {
+							position:absolute;
+							left:395px;
+							top:422px;
+							z-index:0;
+						} 
+						
+						#knouse_foods {
+							position:absolute;
+							left:346px;
+							top:497px;
+							z-index:0;
+						}
+						
+						#dupont {
+							position:absolute;
+							left:305px;
+							top:275px;
+							z-index:0;
+						}
+						
+						#bayer {
+							position:absolute;
+							left:512px;
+							top:196px;
+							z-index:0;
+						} 
+						
+						#syntega {
+							position:absolute;
+							left:245px;
+							top:105px;
+							z-index:0;
+						} 
+						
+						#pepsico {
+							position:absolute;
+							left:431px;
+							top:375px;
+							z-index:0;
+						} 
+						
+						#coke {
+							position:absolute;
+							left:550px;
+							top:314px;
+							z-index:0;
+						} 
+						
+						#nestleusa {
+							position:absolute;
+							left:213px;
+							top:285px;
+							z-index:0;
+						} 
+						
+						#congra {
+							position:absolute;
+							left:513px;
+							top:124px;
+							z-index:0;
+						} 
+						
+						#general_mills {
+							position:absolute;
+							left:233px;
+							top:359px;
+							z-index:0;
+						} 
+						
+						#delmontefoods {
+							position:absolute;
+							left:501px;
+							top:367px;
+							z-index:0;
+						} 
+						
+						#kelloggcompany {
+							position:absolute;
+							left:290px;
+							top:404px;
+							z-index:0;
+						} 
+						
+						
+						#hersheyco {
+							position:absolute;
+							left:357px;
+							top:441px;
+							z-index:0;
+						} 
+						
+						
+						#jmsmucker {
+							position:absolute;
+							left:406px;
+							top:454px;
+							z-index:0;
+						} 
+						
+						
+						#gorcery_manufactures_association {
+							position:absolute;
+							left:210px;
+							top:247px;
+							z-index:0;
+						} 
+												
+						#hormelfoods {
+							position:absolute;
+							left:528px;
+							top:428px;
+							z-index:0;
+						} 
+	
+						
+						#bumblebeefoods {
+							position:absolute;
+							left:472px;
+							top:464px;
+							z-index:0;
+						} 
+
+						#saralee {
+							position:absolute;
+							left:605px;
+							top:273px;
+							z-index:0;
+						} 
+
+						
+						#bimbobakeries {
+							position:absolute;
+							left:574px;
+							top:392px;
+							z-index:0;
+						} 
+
+						
+						#pinnaclefoods {
+							position:absolute;
+							left:437px;
+							top:488px;
+							z-index:0;
+						} 
+
+						
+						#deanfoods {
+							position:absolute;
+							left:371px;
+							top:487px;
+							z-index:0;
+						}
+						
+												
+						#campbellssoup {
+							position:absolute;
+							left:516px;
+							top:469px;
+							z-index:0;
+						} 
+	
+						
+						#mccormickcompany {
+							position:absolute;
+							left:268px;
+							top:444px;
+							z-index:0;
+						} 
+
+						#wrigleyjr {
+							position:absolute;
+							left:570px;
+							top:446px;
+							z-index:0;
+						} 
+
+						
+						#richproducts {
+							position:absolute;
+							left:616px;
+							top:365px;
+							z-index:0;
+						} 
+
+						
+						#cargillinc {
+							position:absolute;
+							left:610px;
+							top:210px;
+							z-index:0;
+						} 
+
+						
+						#marsfood {
+							position:absolute;
+							left:483.005px;
+							top:515.005px;
+							z-index:0;
+						}
+						
+						/* RELATED LINKS SLIDE STYLE */		
+						#video {
+							display:none;
+						}
+						
+						iframe {
+							position: absolute;
+							left: 65px;
+							top: 50px;
+							
+						}
+						

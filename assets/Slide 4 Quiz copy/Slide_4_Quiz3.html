@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	<style>
+		/*css reset */
+		html,body,div,span,h1,h2,h3,h4,h5,h6,p,code,small,strike,strong,sub,sup,b,u,i{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;} 
+		article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} 
+		body{line-height:1; font:normal 0.9em/1em "open sans", Helvetica, Arial, sans-serif;} 
+		ol,ul{list-style:none;} 
+		@font-face {
+		    font-family: 'SilkscreenNormal';
+		    src: url('Silkscreen-fontfacekit/slkscr-webfont.eot');
+		    src: url('Silkscreen-fontfacekit/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('Silkscreen-fontfacekit/slkscr-webfont.woff') format('woff'),
+		         url('Silkscreen-fontfacekit/slkscr-webfont.ttf') format('truetype'),
+		         url('Silkscreen-fontfacekit/slkscr-webfont.svg#SilkscreenNormal') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'SilkscreenBold';
+		    src: url('slkscrb-webfont.eot');
+		    src: url('slkscrb-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('slkscrb-webfont.woff') format('woff'),
+		         url('slkscrb-webfont.ttf') format('truetype'),
+		         url('slkscrb-webfont.svg#SilkscreenBold') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'SilkscreenExpandedNormal';
+		    src: url('slkscre-webfont.eot');
+		    src: url('slkscre-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('slkscre-webfont.woff') format('woff'),
+		         url('slkscre-webfont.ttf') format('truetype'),
+		         url('slkscre-webfont.svg#SilkscreenExpandedNormal') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'SilkscreenExpandedBold';
+		    src: url('slkscreb-webfont.eot');
+		    src: url('slkscreb-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('slkscreb-webfont.woff') format('woff'),
+		         url('slkscreb-webfont.ttf') format('truetype'),
+		         url('slkscreb-webfont.svg#SilkscreenExpandedBold') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+		
+		
+	html {
+		overflow:hidden;
+	}
+		
+   #frame{
+			width:760px;
+			height:350px;
+			border:1px solid #ccc;
+			background-image: url("BG_2.png");
+			overflow:hidden;
+
+
+
+
+
+                
+			
+			}   
+			
+			
+		#content{font:normal normal 1em/1.5em "Open Sans", Helvetica, Arial, sans-serif;margin:0 40px 10px;color:#FFFFFF} 
+		h1{
+			font:normal bold 2.9em/1.8em "Open Sans", Helvetica, Arial, sans-serif;
+			text-align:center;
+			color: #FFF;
+			background:rgb(30,87,153); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 47%, rgba(32,124,202,1) 93%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(47%,rgba(41,137,216,1)), color-stop(93%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 47%,rgba(32,124,202,1) 93%,rgba(125,185,232,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+			padding:10px;
+			padding:0 15px;width:auto
+			}
+			
+		h2{font:italic bold 1.5em/1.2em "open sans condensed", Helvetica, Arial, sans-serif;padding:5px 15px 15px; color:#FFFFFF} 
+		input[type=radio]{margin:0 10px 5px -22px;} label{margin:0 0 5px;}
+		#score p{font-size:0.95em; font-style:italic; color:#FFF; float:right;margin:5px 25px 0 0;}
+		#score:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+		#response{min-height:70px; margin:10px; line-height:2; color:#FFF}
+		#response h3{font:normal bold 1.7em/1.5em "open sans", Helvetica, Arial, sans-serif; margin:5px 0; color:#FFFFFF}
+		
+		
+		#desk{
+			width: 860px;
+			height:315px;
+			opacity: 0.3;
+			background-image: url("free_hires_wood_texture_5.jpeg");
+			z-index:0;}
+			
+		
+		#dollars{
+			
+			width: 860px;
+			height: 270px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url("Dollars2.png");
+			z-index:1;
+		}
+			
+			
+		}
+		
+	</style>
+	<script>
+	
+		var quiz = [
+			{
+				"question"		: 	"Q1: I spend more on initiatives, candidates, and parties than any other group in California. I have to be a(n)...",
+				"choices"		: 	[
+										"Union",
+										"Individual Donor",
+										"Corporation"
+										
+									],
+				"correct"		: 	"Corporation",
+				"explanation"	: 	"Corporate interests spent $700 million between 2001 and 2011 on political causes, according to the Center for Investigative Reporting. In comparison, labor unions spent $284 million.",
+				
+			},
+			{
+				"question"		: 	"Q2: How many ballot measures have there been since 1996 to limit union political contributions?",
+				"choices"		: 	[
+										"3",
+										"2",
+										"Never. Why do you think unions are so powerful?"
+										
+									],
+				"correct"		: 	"3",
+				"explanation"	: 	"Attempts at restraining the political influence of unions are nothing new in California. Three different measures have been proposed over the past 15 years.",
+			},
+			{
+				"question"		: 	"Q3: Prop 32 would prevent any group from using paycheck deductions for political purposes. True or false?",
+				"choices"		: 	[
+										"True",
+										"False",
+										"Um... true and false?"
+										
+									],
+				"correct"		: 	"True",
+				"explanation"	: 	"Prop 32 would prevent any group from using paycheck deductions for political purposes.",
+			},
+			{
+				"question"		: 	"Q4: If I'm a politician, I can no longer accept donations from...",
+				"choices"		: 	[
+										"Unions",
+										"Government Contractors",
+										"The League of Extraordinary Gentlemen"
+										
+									],
+				"correct"		: 	"Government Contractors",
+				"explanation"	: 	"Under Prop 32, politicians will no longer be able to accept donations from government workers they have contracts with.",
+			},
+			{
+				"question"		: 	"Q5: Which is these groups is MOST likely to support Prop 32?",
+				"choices"		: 	[
+										"Democrats for Education Reform",
+										"The AFL-CIO",
+										"The League of Women Voters"
+										
+									],
+				"correct"		: 	"Democrats for Education Reform",
+				"explanation"	: 	"It sounds like they would be against Prop 32, but the Democrats for Education Reform is one of the leading Pro-32 donors.",
+			},
+	
+		];
+		
+		var currentQuestion = 0;
+		var score = 0;
+		var askingQuestion = true;
+		
+		function loadQuestion(){
+			
+			//set temporary variable for creating radio buttons
+			var radioButton;
+			
+			//clear out radio buttons from previous question
+			document.getElementById('content').innerHTML = "";
+			
+			//loop through choices, and create radio buttons
+			for(var i=0; i < quiz[currentQuestion]["choices"].length; i++){
+				
+				radioButton  = document.createElement('input');
+				radioButton.type = 'radio';
+				radioButton.name = 'quiz';
+				radioButton.id = 'choice'+ (i+1);
+				radioButton.value = quiz[currentQuestion]["choices"][i];
+				
+				//create label tag, which hold the actual text of the choices
+				var label = document.createElement('label');
+				label.setAttribute('for','choice'+ (i+1));
+				label.innerHTML = quiz[currentQuestion]["choices"][i];
+				
+				//create a <br> tag to separate options
+				var br = document.createElement('br');
+				
+				//attach them to content. Attach br tag, then label, then radio button
+				document.getElementById('content').insertBefore(br);
+				document.getElementById('content').insertBefore(label, br);
+				document.getElementById('content').insertBefore(radioButton, label);
+			}
+			
+			//load the question
+			document.getElementById('question').innerHTML = quiz[currentQuestion]["question"];
+			
+			//setup score for first time
+			if(currentQuestion == 0){
+				document.getElementById('score').innerHTML =  quiz.length +' possible</p>';
+				
+			}
+		}
+		
+		function checkAnswer(){
+			
+			//are we asking a question, or proceeding to next question?
+			if(askingQuestion){
+				
+				//change button text to next question, so next time they click it, it goes to next question
+				document.getElementById('check').innerHTML = 'Next Question';
+				askingQuestion = false;
+				
+				//determine which radio button they clicked
+				var userpick;
+				var correctIndex;
+				var radios = document.getElementsByName('quiz');
+				for(var i=0; i < radios.length; i++){
+					if(radios[i].checked){ //if this radio button is checked
+						userpick = radios[i].value;
+					}
+					//get index of correct answer
+					if(radios[i].value == quiz[currentQuestion]["correct"]){
+						correctIndex = i;
+					}
+				}
+				
+				//set the color if they got it right, or wrong
+				if(userpick == quiz[currentQuestion]["correct"]){
+					score++;
+					document.getElementsByTagName('label')[correctIndex].style.color = "green";
+					document.getElementsByTagName('label')[correctIndex].style.fontWeight = "bold";
+					document.getElementById('explanation').innerHTML = "<h3>Correct!</h3>";
+				} else {
+					document.getElementsByTagName('label')[correctIndex].style.color = "red";
+					document.getElementsByTagName('label')[correctIndex].style.fontWeight = "bold";
+					document.getElementById('explanation').innerHTML = "<h3>Incorrect</h3>";
+				}
+				
+				document.getElementById('explanation').innerHTML += '<p>' + quiz[currentQuestion]["explanation"] + '</p>';
+				
+				
+				
+			} else { //reset form and move to next question
+
+				//setting up so user can ask a question
+				askingQuestion = true;
+				
+				//change button text back to 'submit answer'
+				document.getElementById('check').innerHTML = 'Submit Answer';
+				
+				document.getElementById('explanation').innerHTML = "";
+				
+				//if we're not on last question, increase question number
+				if(currentQuestion < quiz.length - 1){
+					currentQuestion++;
+					loadQuestion();
+				} else {
+					showFinalResults();
+				}
+
+			}
+		}
+		
+		function showFinalResults(){
+			
+			document.getElementById('content').innerHTML = "<h2>Thank you for playing Who's My Donor!</h2>";
+			document.getElementById('content').innerHTML += "<p>Now, let's see how you did, shall we?:</p>";
+			document.getElementById('content').innerHTML += '<h2>' + score + ' out of ' + quiz.length + ' questions, ' + Math.round(score/quiz.length * 100) + '%</h2>';
+			
+			//delete the button
+			var button = document.getElementById('check');
+			button.parentNode.removeChild(button); //js requires you to delete elements from the parent
+			
+			//remove question
+			document.getElementById('question').innerHTML = "";
+			
+		}
+		
+	
+		window.onload = loadQuestion;
+	
+	</script>
+	
+</head>
+<body style="background: #000000;">
+	<div id="frame">
+		<h1>Who's My Donor?</h1>
+		<div id="score"><p>score: 0 right answers out of 0 possible</p></div>
+		<h2 id="question">Question here</h2>
+		<div id="content">
+			
+		</div>
+		<button id="check" onclick="checkAnswer()">Submit Answer</button>
+		<div id="response">
+			<div id="explanation"></div>
+		</div>
+		<div id="desk">
+			<div id="dollars"></div>
+		</div>	
+	</div>
+</body>
+</html>

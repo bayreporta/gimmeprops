@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 30</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS--> 
+	<link href='css/prop40.css' rel='stylesheet' type='text/css'>
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop40.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</head>
+<body onload="arrowCleaning();">
+	<div id="container">		 
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		 
+		<!-- START SLIDE HTML -->
+			<!-- SUMMARY SLIDE HTML -->
+				<section id="summary_slide" class="slides">
+					<div id="slide1bubble"></div> 
+					<div class="triangle"></div>
+					<img src="assets/willa.png" id="slide1Char">
+					<article id="summary_text" class="bubbletext"><strong><b>Prop 40</strong></b> is a referendum on a redistricting plan for the California State Senate approved by the California Citizens Redistricting Commission. A <strong><b>YES</strong></b> vote supports the redrawn lines as is; a <strong><b>NO</strong></b> vote supports redrawing them.</article> 
+					<p id="slide1_chartext">- Willa the Billa, Redistricted Bill</p>
+				</section>
+			<!-- RELATED LINKS SLIDE HTML -->
+				<section id="related_links" class="slides">
+					<div id="link_bubble">
+						<span id="link_bubble_text">Want to know more about <strong><b>Prop 40</strong></b>? I organized some link action for you to check out. Just remember: <strong><b>YES</strong></b> = keep the commission's legislative districts; <strong><b>NO</strong></b> = press the reset button.</span>
+					</div>
+					<div class="triangle" style="top:60px;left:477px;"></div>
+					<div id="linkbox">
+						<h2>Related Links</h2>
+						<ul>
+							<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/40-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+							<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/40-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+							<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#11"><li>California Report Info on Prop 40</li></a>
+							<a target="blank" href="http://holdpoliticiansaccountable.org/"><li>Supporters of Prop 40 Website</li></a>
+						</ul>	
+					</div>
+					<img src="assets/willa_s2_40.svg" id="link_image">
+				</section>		
+	</div>
+</body>
+</html>

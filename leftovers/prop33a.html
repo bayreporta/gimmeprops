@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 33</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- JS IMPORTS-->
+	<script src="jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-ui-1.9.0.custom.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	
+	<style type="text/css" media="screen">
+		
+		/* CSS RESET */
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			vertical-align: baseline;
+		}	
+	
+		#container {
+			width:860px;
+			height:640px;
+			background-color:#1E1E1E;
+		}
+		
+		/* SLIDE STYLE */
+		.slides {
+			width:860px;
+			height:640px;
+			position:fixed;
+		}
+		
+		/* TEXT IN BUBBLES STYLE */
+		.bubbletext {
+			font-family:"open sans condensed","open sans","san serif";
+			font-size:20px;
+			line-height:27px;
+			word-spacing:1px;
+		}
+		
+		/* ARROW PLACEMENT STYLES */
+			.right_arrow {
+				display:none;
+				position:fixed;
+				top:300px;
+				left:810px;
+				padding:0px;
+				margin:0px;
+				z-index:1;
+			}
+			.right_arrow_solid {
+				display:none;
+				position:fixed;
+				top:300px;
+				left:810px;
+				padding:0px;
+				margin:0px;
+				z-index:1;
+			}
+			.left_arrow {
+				display:none;
+				position:fixed;
+				top:300px;
+				left:20px;
+				padding:0px;
+				margin:0px;
+				z-index:1;
+			}
+			.left_arrow_solid {
+				display:none;
+				position:fixed;
+				top:300px;
+				left:20px;
+				padding:0px;
+				margin:0px;
+				z-index:1;
+			}
+		
+		/* TOOLTIP STLYE */
+			#tooltip {
+				position:absolute;
+				z-index:9999;
+				color:#fff;
+				font-size:13px;
+				line-height:20px;
+				word-spacing:1px;
+				width:180px;
+				font-family:"droid serif",serif;
+			/*	font-family:"open sans","san serif";*/
+				opacity:0.7;
+				
+			}
+			a:hover {
+				text-decoration:none;
+			}
+		
+			#tooltip .tipBody {
+				background-color:#1E1E1E;
+				padding:5px 9px 5px 15px;
+				border-radius: 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+			}
+			
+		
+								/* INDIVIDUAL SLIDE STYLE */
+		
+								#slide1 {
+									display:show;
+								}
+														#slide1Fannie {
+															position:fixed;
+															top:345px;
+															left:411px;
+															
+														}
+														#slide1bubble {
+															position:fixed;
+															top:106px;
+															left:28px;
+														}
+														#slide1_text {
+															position:fixed;
+															top:125px;
+															left:52px;
+															width:621px;
+															height:127px;
+														}
+														#slide1_chartext {
+															color:white;
+															font-family:"open sans",helvetica,"san serif";
+															font-weight:700;
+															opacity:0.7;
+															position:fixed;
+															top:612px;
+															left:410px;
+															width:100%;
+														}
+								#slide2 {
+									display:none;
+									background-image:url("prop33/slide2_back.png");
+								}
+														#slide2_bubble {
+															position:fixed;
+															top:11px;
+															left:19px;
+														}
+														#slide2_fannie {
+															position:fixed;
+															top:60px;
+															left:333px;
+														}
+														#slide2_bubtext {
+															line-height:30px;
+															width:411px;
+															height:64px;
+															position:fixed;
+															top:26px;
+															left:34px;
+															color:white;
+															
+														}
+														#slide2_reg {
+															position:fixed;
+															top:279px;
+															left:60px;
+														}
+														#slide2_insurance {
+															position:fixed;
+															top:240px;
+															left:174px;
+														}
+														#slide2_kid {
+															position:fixed;
+															top:204px;
+															left:289px;
+														}
+														#slide2_ball {
+															position:fixed;
+															top:334px;
+															left:336px;
+														}
+														#slide2_car {
+															position:fixed;
+															top:382px;
+															left:151px;
+														}
+														#slide2_unemploy {
+															position:fixed;
+															top:244px;
+															left:585px;
+														}
+														#slide2_soldier {
+															position:fixed;
+															top:257px;
+															left:722px;
+														}
+								#slide3 {
+									display:none;
+								}
+														#slide3Romney {
+															position:fixed;
+															top:227px;
+															left:88px;
+														}
+														#slide3Joseph {
+															position:fixed;
+															top:234px;
+															left:604px;
+														}
+														#slide3text1 {
+															top:142px;
+															left:63px;
+															width:486px;
+															height:33px;
+															
+														}
+														#slide3text2 {
+															top:211px;
+															left:311px;
+															width:272px;
+															height:123px;
+															text-align:center;
+														}
+														#slide3text3 {
+															top:353px;
+															left:231px;
+															width:291px;
+															height:60px;
+														}
+														#slide3text4 {
+															top:518px;
+															left:55px;
+															width:774px;
+															height:60px;
+															position:fixed;
+															color:white;
+															font-family:"open sans","san serif";
+															font-size:31px;
+															line-height:30px;
+															word-spacing:1px;
+															font-weight:900;
+															text-align:center;
+														}
+														.slide3text {
+															position:fixed;
+															color:white;
+															font-family:"droid serif",serif;
+															font-size:20px;
+															line-height:30px;
+															word-spacing:1px;
+														}
+														#slide3line1 {
+															position:fixed;
+															top:171px;
+															left:206px;
+														}
+														#slide3line2 {
+															position:fixed;
+															top:279px;
+															left:584px;
+														}
+														#slide3line3 {
+															position:fixed;
+															top:293px;
+															left:214px;
+														}
+								#slide4 {
+									display:none;
+								}
+														#slide4fannie {
+															position:fixed;
+															top:125px;
+															left:582px;
+														}
+														#slide4bubble {
+															position:fixed;
+															top:17px;
+															left:16px;
+														}
+														#slide4text {
+															position:fixed;
+															top:27px;
+															left:33px;
+															width:775px;
+															height:65px;
+														}
+														#slide4car1 {
+															position:fixed;
+															top:328px;
+															left:59px;
+														}
+														#slide4car2 {
+															position:fixed;
+															top:463px;
+															left:57px;
+														}
+														#slide4car3 {
+															position:fixed;
+															top:324px;
+															left:539px;
+														}
+														#slide4car4 {
+															position:fixed;
+															top:463px;
+															left:541px;
+														}
+		
+		
+	</style>
+
+
+	<script type="text/javascript" charset="utf-8">
+		/*GLOBAL VARIABLES*/
+		var curSlide = 1;
+		
+		
+		
+		
+		
+		/*LIGHT UP/DARKEN THE RIGHT ARROW*/
+		$(document).ready(function(){
+			$('.right_arrow').show();
+			$('.right_arrow').hover(function(){
+				$('.right_arrow_solid').show();
+			},function (){
+				$('.right_arrow_solid').hide();
+			});
+			
+		});
+		
+		/*LIGHT UP/DARKEN THE LEFT ARROW*/
+		$(document).ready(function(){
+			$('.left_arrow').show();
+			$('.left_arrow').hover(function(){
+				$('.left_arrow_solid').show();
+			},function (){
+				$('.left_arrow_solid').hide();
+			});
+		});
+		
+		$(document).ready(function(){			
+			
+			$('.selectable').hover(function(){
+				$(this).css({'opacity':'0.4'});
+			}, function(){
+				$(this).css('opacity', '1');
+			});
+			
+		});
+		
+		/* TOOLBAR POPUP */
+
+			$(document).ready(function() {
+
+				//Select all anchor tag with rel set to tooltip
+				$('a[rel=tooltip]').mouseover(function(e) {
+					//Grab the title attribute's value and assign it to a variable
+					var tip = $(this).attr('title');	
+
+					//Remove the title attribute's to avoid the native tooltip from the browser
+					$(this).attr('title','');
+
+					//Append the tooltip template and its value
+					$(this).append('<div id="tooltip"><div class="tipHeader"></div><div class="tipBody">' + tip + '</div><div class="tipFooter"></div></div>');		
+
+					//Show the tooltip with fadeIn effect
+					$('#tooltip').fadeIn('500');
+					$('#tooltip').fadeTo('10',0.9);
+
+				}).mousemove(function(e) {
+
+					//Keep changing the X and Y axis for the tooltip, thus, the tooltip move along with the mouse
+					$('#tooltip').css('top', e.pageY + 10 );
+					$('#tooltip').css('left', e.pageX + 20 );
+
+				}).mouseout(function() {
+
+					//Put back the title attribute's value
+					$(this).attr('title',$('.tipBody').html());
+
+					//Remove the appended tooltip template
+					$(this).children('div#tooltip').remove();
+				});
+			});
+		/*-----------------------------------------------*/
+		/*ARROW HIDE 1ST and LAST --> ONLOAD IN BODY*/
+		
+			function arrowCleaning() {
+				if (curSlide ==1) {
+					document.getElementById('left_arrow').style.display = "none";
+				}
+				else {
+					document.getElementById('left_arrow').style.display = "block";
+				}
+				if (curSlide == 4) {
+					document.getElementById('right_arrow').style.display = "none";
+				}
+				else {
+					document.getElementById('right_arrow').style.display = "block";
+				}
+			}
+		/*-----------------------------------------------*/
+		/* SLIDE TRANSITIONS */
+		
+		function slideNext() {
+			if (curSlide == 1) {
+				document.getElementById('slide1').style.display = "none";
+				document.getElementById('slide2').style.display = "block";
+				curSlide = 2;
+			}
+			else if (curSlide == 2) {
+				document.getElementById('slide2').style.display = "none";
+				document.getElementById('slide3').style.display = "block";
+				curSlide = 3;
+			}
+			else if (curSlide == 3) {
+				document.getElementById('slide3').style.display = "none";
+				document.getElementById('slide4').style.display = "block";
+				curSlide = 4;
+			}
+		}
+		
+		function slideBefore() {
+			if (curSlide == 2) {
+				document.getElementById('slide2').style.display = "none";
+				document.getElementById('slide1').style.display = "block";
+				curSlide = 1;
+			}
+			else if (curSlide == 3) {
+				document.getElementById('slide3').style.display = "none";
+				document.getElementById('slide2').style.display = "block";
+				curSlide = 2;
+			}
+			else if (curSlide == 4) {
+				document.getElementById('slide4').style.display = "none";
+				document.getElementById('slide3').style.display = "block";
+				curSlide = 3;
+			}
+		}
+		
+	
+		
+		
+	</script>
+	
+	
+</head>
+<body onload="arrowCleaning();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		<!-- START SLIDE HTML -->
+		<div id="slide1" class="slides">
+			<img src="prop33/slide1_textbub.png" id="slide1bubble">
+			<img src="prop33/slide1_fannie.png" id="slide1Fannie">
+			<p id="slide1_text" class="bubbletext">Funded in large part by the CEO of Mercury Insurance, <strong>Prop 33</strong> would <strong>deregulate the auto insurance industry</strong> by allowing insurers to base rates off of how long a person has had <strong>continuous coverage</strong>, with exceptions. To put it another way, if a person has had continual coverage for 90 days or less, they could get a discount. If not, they could be charged more.</p> 
+			<p id="slide1_chartext">- Fannie the Frog, Auto Insurance Expert Extraordinaire</p>
+		</div>
+		<div id="slide2" class="slides">
+			<img src="prop33/slide2_bubble.png" id="slide2_bubble">
+			<img src="prop33/slide2_fannie.png" id="slide2_fannie">
+			<p id="slide2_bubtext" class="bubbletext">So what would Prop 33 do exactly?<span></br></span> 
+			Ask the locals...ribbit!</p>
+			
+			<!--FIGURES USED FOR TEXT POPUPS-->
+			<a href="#" rel="tooltip" title="For most people, as long as you don’t have a lapse in coverage that’s more than 90 days total over a five year period, you get a discount. If not, you could see a rate increase."><img src="prop33/slide2_reg.png" class="selectable" id="slide2_reg"></a>
+			<a href="#" rel="tooltip" title="Insurance companies don’t have to give you this discount. If they do, the discount would be given based on how many years over the past five years you had coverage, rounded up. So if you had coverage for two out of five years, you would get 40 percent of the discount. Win!"><img src="prop33/slide2_insurance.png" class="selectable" id="slide2_insurance"></a>
+			<a href="#"	rel="tooltip" title="Minors have never driven so they can’t start off with a discount, unless a parent applies for the discount, that is. Otherwise, a higher insurance rate could come with John or Jane’s first car."><img src="prop33/slide2_kid.png" class="selectable" id="slide2_kid"></a>
+			<a href="#" rel="tooltip"><img src="prop33/slide2_ball.png" id="slide2_ball"></a>
+			<a href="#" rel="tooltip" title="The economy has taken its toll on many, and a lapse in coverage due to unemployment won’t count against you if it’s no more than 18 months total in a five year period."><img src="prop33/slide2_unemploy.png" class="selectable" id="slide2_unemploy"></a>
+			<a href="#" rel="tooltip" title="Whether you’re fighting overseas or defending the homefront, active military services won’t count against you if there’s a lapse in coverage."><img src="prop33/slide2_soldier.png" class="selectable" id="slide2_soldier"></a>
+			<a href="#" rel="tooltip" title="Voters made the choice to regulate the auto insurance industry. As such, a company must base its rate on a driver’s safety record, the number of miles driven each year, and the number of years they have been driving. Those rates must be approved by the State. There are also 16 optional factors that a company could use, like loyalty discounts."><img src="prop33/slide2_car.png" class="selectable" id="slide2_car"></a>
+		</div>
+			
+			
+			
+			
+				
+		
+		
+		<div id="slide3" class="slides">
+			<img src="prop33/slide3_romney.png" id="slide3Romney">
+			<img src="prop33/slide3_joseph.png" id="slide3Joseph">
+			<img src="prop33/slide3_line1.png" id="slide3line1">
+			<img src="prop33/slide3_line3.png" id="slide3line2">
+			<img src="prop33/slide3_line2.png" id="slide3line3">
+			<p id="slide3text1" class="slide3text">“Hello chap! Need any funding from the usual suspects?”</p>
+			<p id="slide3text2" class="slide3text">“Nah man. I got this shit locked down tight. Threw $8.2 million into this so poor folk can get a discount!”</p>
+			<p id="slide3text3" class="slide3text">“Hahaha! Good show! Give them the ole one-two care for the poor.”</p>
+			<p id="slide3text4">COMING SOON, A CHART THAT SHOWS THIS!!!!!!</p>
+		</div>
+		<div id="slide4" class="slides">
+			<img src="prop33/slide4_fannie.png" id="slide4fannie">
+			<img src="prop33/slide4_bubble.png" id="slide4bubble">
+			<p id="slide4text" class="bubbletext">“Need more information about Prop 33? Check out these useful links below. Always look both ways before crossing the road...and always look at all sides before casting a vote...ribbit!”</p>
+			<!--CAR LINKS-->
+			<a href="http://vig.cdn.sos.ca.gov/2012/general/pdf/33-title-summ-analysis.pdf" rel="tooltip" target="_blank" title="Official Summary and Fiscal Projections from State of California"><img src="prop33/slide4_car1.png" class="selectable" id="slide4car1"></a>
+			<a href="http://www.2012autoinsurancediscountact.com/" rel="tooltip" target="_blank" title="Supporters of Prop 33"><img src="prop33/slide4_car2.png" class="selectable" id="slide4car2"></a>
+			<a href="http://californiawatch.org/dailyreport/billionaire-insurance-exec-backs-initiative-change-rate-rules-14628" rel="tooltip" target="_blank" title="Billionaire Insurance Exec Backs Initiative to Change Rate Rules (California Watch)"><img src="prop33/slide4_car3.png" class="selectable" id="slide4car3"></a>
+			<a href="http://www.stopthesurcharge.org/" rel="tooltip" target="_blank" title="Opponents of Prop 33"><img src="prop33/slide4_car4.png" class="selectable" id="slide4car4"></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 33</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS IMPORTS-->
+	<link href='css/prop33.css' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- JS IMPORTS-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prop33.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+		
+	</style>
+</head>
+<body onload="arrowCleaning();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		
+		<!-- START SLIDE HTML -->
+		<section id="summary_slide" class="slides">
+			<img src="prop33/slide1_fannie.png" id="slide1Char">
+			<div class="triangle"></div>
+			<div id="slide1bubble"></div>
+			<article id="summary_text" class="bubbletext"><strong><b>Prop 33</b></strong> could mean lower rates for people who have had continuous auto insurance coverage but higher rates for those who have had gaps in coverage.</article> 
+			<p id="slide1_chartext">- Fannie the Frog, Auto Insurance Expert Extraordinaire</p>
+		</section>
+		
+		<section id="interactive_s2" class="slides">
+			<div id="interactive_textbox">
+				<span id="interactive_text">Scroll around the screen to discover information about Prop 33.</span>
+			</div>
+			
+			<!--BACKGROUND ASSETS-->
+			<img src="assets/slide2_back.png">
+			<img src="assets/slide2_ball.png" id="ball">
+			<img src="assets/slide2_car.png" id="car">
+			<img id="small_character" src="assets/fannie_small.png">
+	
+			<!--INTERACTIVE ASSETS-->
+			<a href="#" rel="tooltip" title="<strong><b>For Most People...</strong></b><br>
+			• As long as you don’t have a lapse in auto insurance for more than 90 days over  a five-year period, you could get a discount. If not, you could see a rate increase"><img src="assets/slide2_reg.png" class="selectable" id="reg"></a>
+			<a href="#" rel="tooltip" title="<strong><b>How it works</strong></b><br>
+			• To get the maximum discount, a person would have to have five years of continuous coverage. Anything less and a person would get a portion of the maximum discount"><img src="assets/slide2_insurance.png" class="selectable" id="insurance"></a>
+			<a href="#"	rel="tooltip" title="<strong><b>The Kids Are Alright</strong></b><br>
+			If a parent gets the discount, so does a minor. If not, teens could face a higher insurance rate since they have never had coverage"><img src="assets/slide2_kid.png" class="selectable" id="kid"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Recession Waiver</strong></b><br>
+			• A lapse in auto insurance due to unemployment won’t count against you if the lapse is not more than 18 months total over a five-year period"><img src="assets/slide2_unemploy.png" class="selectable" id="unemploy"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Trooper Discount</strong></b><br>
+			If you’re in the military a lapse in auto insurance because of active military service won’t count against you "><img src="assets/slide2_soldier.png" class="selectable" id="soldier"></a>
+			<a href="#" rel="tooltip" title="<strong><b>Self-Interest</strong></b><br>
+			•  George Joseph, CEO of Mercury Insurance, has contributed $16.2 million to support this campaign. This is the second time he’s spearheaded a prop like this"><img src="assets/george_s2_33.png" class="selectable" id="george"></a>
+		</section>
+		
+		
+
+		<!-- RELATED LINKS SLIDE HTML -->
+		<section id="related_links" class="slides">
+			<div id="link_bubble">
+				<span id="link_bubble_text">Want to know more about <strong><b>Prop 33</b></strong>? I got some links for you here to check out here...ribbit.</span>
+			</div>
+			<div class="triangle" style="top:50px;left:475px"></div>
+			<div id="linkbox">
+				<h2>Related Links</h2>
+				<ul>
+					<a target="blank" href="http://vig.cdn.sos.ca.gov/2012/general/pdf/33-title-summ-analysis.pdf"><li>Official Summary and Fiscal Estimates (PDF)</li></a>
+					<a target="blank"  href="http://vig.cdn.sos.ca.gov/2012/general/pdf/33-arg-rebuttals.pdf"><li>Arguments For and Against the Measures (PDF)</li></a>
+					<a target="blank" href="http://www.californiareport.org/specialcoverage/election2012/statepropositions-guide.jsp#4"><li>California Report Info on Prop 33</li></a>
+					<a target="blank" href="http://www.yesprop33.com/"><li>Supporters of Prop 33 Website</li></a>
+					<a target="blank" href="http://stopprop33.consumerwatchdogcampaign.org/"><li>Opponents of Prop 33 Website</li></a>
+				</ul>	
+			</div>
+			<img src="assets/fannie_rl.png" id="link_image">
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prop 33</title>
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- JS/CSS IMPORTS-->
+	<script src="jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-ui-1.9.0.custom.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="props.js" type="text/javascript" charset="utf-8"></script>
+	<link href='props.css' rel='stylesheet' type='text/css'>
+
+	
+	
+</head>
+<body onload="arrowCleaning();">
+	<div id="container" class="">		
+		<!-- RIGHT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_right_solid.svg" class="right_arrow_solid"></a>
+		<a href="#" onclick="slideNext();arrowCleaning();"><img src="assets/arrow_right.png" id="right_arrow" class="right_arrow"></a>
+		<!-- LEFT ARROWS FOR NAVIGATION -->
+		<a href="#"><img src="assets/arrow_left_solid.png" class="left_arrow_solid"></a>
+		<a href="#" onclick="slideBefore();arrowCleaning();"><img src="assets/arrow_left.png" id="left_arrow" class="left_arrow"></a>
+		 
+		<!-- START SLIDE HTML -->
+			<!-- SUMMARY SLIDE HTML -->
+				<div id="summary_slide" class="slides">
+					<div id="BUBBLEID" class="BUBBLE CLASS"></div>
+					<img src="" id="slide1Char">
+					<p id="slide1_text" class="bubbletext">ENTER SUMMARY TEXT HERE.</p> 
+					<p id="slide1_chartext">- ENTER CHARACTER INFO</p>
+				</div>
+			
+			<!-- INTERACTIVE SLIDE HTML -->
+				<div id="interactive_slide" class="slides">
+					<img src="prop33/slide2_bubble.png" id="slide2_bubble">
+					<img src="prop33/slide2_fannie.png" id="slide2_fannie">
+					<p id="slide2_bubtext" class="bubbletext">ENTER CHAR TEXT</p>
+					<a href="#"><img src="prop33/slide2_ball.png" id="slide2_ball"></a>
+
+					<!--FIGURES USED FOR TEXT POPUPS-->
+					<a href="#" rel="tooltip" title="For most people, as long as you don’t have a lapse in coverage that’s more than 90 days total over a five year period, you get a discount. If not, you could see a rate increase."><img src="prop33/slide2_reg.png" class="selectable" id="slide2_reg"></a>
+					<a href="#" rel="tooltip" title="Insurance companies don’t have to give you this discount. If they do, the discount would be given based on how many years over the past five years you had coverage, rounded up. So if you had coverage for two out of five years, you would get 40 percent of the discount. Win!"><img src="prop33/slide2_insurance.png" class="selectable" id="slide2_insurance"></a>
+					<a href="#"	rel="tooltip" title="Minors have never driven so they can’t start off with a discount, unless a parent applies for the discount, that is. Otherwise, a higher insurance rate could come with John or Jane’s first car."><img src="prop33/slide2_kid.png" class="selectable" id="slide2_kid"></a>
+					
+					<a href="#" rel="tooltip" title="The economy has taken its toll on many, and a lapse in coverage due to unemployment won’t count against you if it’s no more than 18 months total in a five year period."><img src="prop33/slide2_unemploy.png" class="selectable" id="slide2_unemploy"></a>
+					<a href="#" rel="tooltip" title="Whether you’re fighting overseas or defending the homefront, active military services won’t count against you if there’s a lapse in coverage."><img src="prop33/slide2_soldier.png" class="selectable" id="slide2_soldier"></a>
+					<a href="#" rel="tooltip" title="Voters made the choice to regulate the auto insurance industry. As such, a company must base its rate on a driver’s safety record, the number of miles driven each year, and the number of years they have been driving. Those rates must be approved by the State. There are also 16 optional factors that a company could use, like loyalty discounts."><img src="prop33/slide2_car.png" class="selectable" id="slide2_car"></a>
+		</div>
+			
+			<!-- DATAVIZ SLIDE HTML -->
+				<div id="dataviz_slide" class="slides">
+			<img src="prop33/slide3_romney.png" id="slide3Romney">
+			<img src="prop33/slide3_joseph.png" id="slide3Joseph">
+			<img src="prop33/slide3_line1.png" id="slide3line1">
+			<img src="prop33/slide3_line3.png" id="slide3line2">
+			<img src="prop33/slide3_line2.png" id="slide3line3">
+			<p id="slide3text1" class="slide3text">“Hello chap! Need any funding from the usual suspects?”</p>
+			<p id="slide3text2" class="slide3text">“Nah man. I got this shit locked down tight. Threw $8.2 million into this so poor folk can get a discount!”</p>
+			<p id="slide3text3" class="slide3text">“Hahaha! Good show! Give them the ole one-two care for the poor.”</p>
+			<p id="slide3text4">COMING SOON, A CHART THAT SHOWS THIS!!!!!!</p>
+		</div>
+				
+			<!-- RELATED LINKS SLIDE HTML -->
+				<div id="links_slide" class="slides">
+					<img src="prop33/slide4_fannie.png" id="slide4fannie">
+					<img src="prop33/slide4_bubble.png" id="slide4bubble">
+					<p id="slide4text" class="bubbletext">“Need more information about Prop 33? Check out these useful links below. Always look both ways before crossing the road...and always look at all sides before casting a vote...ribbit!”</p>
+					<!--CAR LINKS-->
+					<a href="http://vig.cdn.sos.ca.gov/2012/general/pdf/33-title-summ-analysis.pdf" rel="tooltip" target="_blank" title="Official Summary and Fiscal Projections from State of California"><img src="prop33/slide4_car1.png" class="selectable" id="slide4car1"></a>
+					<a href="http://www.2012autoinsurancediscountact.com/" rel="tooltip" target="_blank" title="Supporters of Prop 33"><img src="prop33/slide4_car2.png" class="selectable" id="slide4car2"></a>
+					<a href="http://californiawatch.org/dailyreport/billionaire-insurance-exec-backs-initiative-change-rate-rules-14628" rel="tooltip" target="_blank" title="Billionaire Insurance Exec Backs Initiative to Change Rate Rules (California Watch)"><img src="prop33/slide4_car3.png" class="selectable" id="slide4car3"></a>
+					<a href="http://www.stopthesurcharge.org/" rel="tooltip" target="_blank" title="Opponents of Prop 33"><img src="prop33/slide4_car4.png" class="selectable" id="slide4car4"></a>
+				</div>		
+	</div>
+</body>
+</html>

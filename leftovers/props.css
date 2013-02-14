@@ -1,0 +1,315 @@
+<style type="text/css" media="screen">
+	
+	/* CSS RESET */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}	
+
+	#container {
+		width:860px;
+		height:640px;
+		background-color:#1E1E1E;
+	}
+	
+	
+	/* SLIDE STYLE */
+	.slides {
+		width:860px;
+		height:640px;
+		position:fixed;
+	}
+	
+	/* TEXT IN BUBBLES STYLE */
+	.bubbletext {
+		font-family:"open sans condensed","open sans","san serif";
+		font-size:20px;
+		line-height:27px;
+		word-spacing:1px;
+	}
+	
+	/* ARROW PLACEMENT STYLES */
+		.right_arrow {
+			display:none;
+			position:fixed;
+			top:300px;
+			left:810px;
+			padding:0px;
+			margin:0px;
+			z-index:1;
+		}
+		.right_arrow_solid {
+			display:none;
+			position:fixed;
+			top:300px;
+			left:810px;
+			padding:0px;
+			margin:0px;
+			z-index:1;
+		}
+		.left_arrow {
+			display:none;
+			position:fixed;
+			top:300px;
+			left:20px;
+			padding:0px;
+			margin:0px;
+			z-index:1;
+		}
+		.left_arrow_solid {
+			display:none;
+			position:fixed;
+			top:300px;
+			left:20px;
+			padding:0px;
+			margin:0px;
+			z-index:1;
+		}
+	
+	/* TOOLTIP STLYE */
+		#tooltip {
+			position:absolute;
+			z-index:9999;
+			color:#fff;
+			font-size:13px;
+			line-height:20px;
+			word-spacing:1px;
+			width:180px;
+			font-family:"droid serif",serif;
+		/*	font-family:"open sans","san serif";*/
+			opacity:0.7;
+			
+		}
+		a:hover {
+			text-decoration:none;
+		}
+	
+		#tooltip .tipBody {
+			background-color:#1E1E1E;
+			padding:5px 9px 5px 15px;
+			border-radius: 15px;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+		}
+		
+	
+							/* INDIVIDUAL SLIDE STYLE */
+	
+							#summary_slide {
+								display:block;
+							}
+													/* ADJUST POSITION BASED ON CHARACTER*/
+													#slide1Char {
+														top:345px;
+														left:411px;
+														position:fixed;
+														
+													}
+													#slide1bubble {
+														position:fixed;
+														top:106px;
+														left:28px;
+													}
+													#summary_text {
+														top:125px;
+														left:52px;
+														width:621px;
+														height:127px;
+														position:fixed;
+													}
+													#slide1_chartext {
+														color:white;
+														font-family:"open sans",helvetica,"san serif";
+														font-weight:700;
+														opacity:0.7;
+														position:fixed;
+														top:612px;
+														left:410px;
+														width:100%;
+													}
+							#interactive_slide {
+								display:none;
+								background-image:url("prop33/slide2_back.png");
+							}
+													#slide2_bubble {
+														position:fixed;
+														top:11px;
+														left:19px;
+													}
+													#slide2_fannie {
+														position:fixed;
+														top:60px;
+														left:333px;
+													}
+													#slide2_bubtext {
+														line-height:30px;
+														width:411px;
+														height:64px;
+														position:fixed;
+														top:26px;
+														left:34px;
+														color:white;
+														
+													}
+													#slide2_reg {
+														position:fixed;
+														top:279px;
+														left:60px;
+													}
+													#slide2_insurance {
+														position:fixed;
+														top:240px;
+														left:174px;
+													}
+													#slide2_kid {
+														position:fixed;
+														top:204px;
+														left:289px;
+													}
+													#slide2_ball {
+														position:fixed;
+														top:334px;
+														left:336px;
+													}
+													#slide2_car {
+														position:fixed;
+														top:382px;
+														left:151px;
+													}
+													#slide2_unemploy {
+														position:fixed;
+														top:244px;
+														left:585px;
+													}
+													#slide2_soldier {
+														position:fixed;
+														top:257px;
+														left:722px;
+													}
+							#dataviz_slide {
+								display:none;
+							}
+													#slide3Romney {
+														position:fixed;
+														top:227px;
+														left:88px;
+													}
+													#slide3Joseph {
+														position:fixed;
+														top:234px;
+														left:604px;
+													}
+													#slide3text1 {
+														top:142px;
+														left:63px;
+														width:486px;
+														height:33px;
+														
+													}
+													#slide3text2 {
+														top:211px;
+														left:311px;
+														width:272px;
+														height:123px;
+														text-align:center;
+													}
+													#slide3text3 {
+														top:353px;
+														left:231px;
+														width:291px;
+														height:60px;
+													}
+													#slide3text4 {
+														top:518px;
+														left:55px;
+														width:774px;
+														height:60px;
+														position:fixed;
+														color:white;
+														font-family:"open sans","san serif";
+														font-size:31px;
+														line-height:30px;
+														word-spacing:1px;
+														font-weight:900;
+														text-align:center;
+													}
+													.slide3text {
+														position:fixed;
+														color:white;
+														font-family:"droid serif",serif;
+														font-size:20px;
+														line-height:30px;
+														word-spacing:1px;
+													}
+													#slide3line1 {
+														position:fixed;
+														top:171px;
+														left:206px;
+													}
+													#slide3line2 {
+														position:fixed;
+														top:279px;
+														left:584px;
+													}
+													#slide3line3 {
+														position:fixed;
+														top:293px;
+														left:214px;
+													}
+							#links_slide {
+								display:none;
+							}
+													#slide4fannie {
+														position:fixed;
+														top:125px;
+														left:582px;
+													}
+													#slide4bubble {
+														position:fixed;
+														top:17px;
+														left:16px;
+													}
+													#slide4text {
+														position:fixed;
+														top:27px;
+														left:33px;
+														width:775px;
+														height:65px;
+													}
+													#slide4car1 {
+														position:fixed;
+														top:328px;
+														left:59px;
+													}
+													#slide4car2 {
+														position:fixed;
+														top:463px;
+														left:57px;
+													}
+													#slide4car3 {
+														position:fixed;
+														top:324px;
+														left:539px;
+													}
+													#slide4car4 {
+														position:fixed;
+														top:463px;
+														left:541px;
+													}
+	
+	
+</style>

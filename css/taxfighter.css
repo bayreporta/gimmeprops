@@ -1,0 +1,369 @@
+<style type="text/css" media="screen">
+	/* CSS RESET */
+	html, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+	
+	#taxfighter {
+		display:none;
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:860px;
+		height:640px;
+		
+	}
+	
+	p {
+		color:white;
+		font-family:"open sans","san serif";
+		font-weight:400;
+		padding:0px 15px 0px 15px;
+		font-size:14px;	
+	}
+	
+	span {
+		color:white;
+		font-family:"open sans","san serif";
+		font-weight:400;
+		padding:0px 0px 0px 5px;	
+		font-size:14px;	
+	}
+	
+	h1 {
+		color:white;
+		font-family:"open sans","san serif";
+		font-weight:700;
+		text-align:center;
+		padding:10px 0px 30px 0px;
+		font-size:26px;
+	}
+	
+	/*--------------------------------------------------------------------*/
+	
+	/* BACKGROUND CSS */
+	#background1 {
+		z-index:-1;
+		left:0px;
+		top:0px;
+	}
+	#background2 {
+		z-index:999;
+		position:absolute;
+		top:266px;
+		left:0px;
+	}
+	#background3 {
+		z-index:999;
+		position:absolute;
+		left:159px;
+		top:432px;
+	}
+	#brownsign {
+		z-index:999;
+		position:absolute;
+		left:40px;
+		top:314px;
+	}
+	#mungersign {
+		z-index:999;
+		position:absolute;
+		left:750px;
+		top:314px;
+	}
+	
+	/* FIGURE CSS */
+	#mungerimg {
+		position:absolute;
+		left:734px;
+		top:129px;
+	}
+	#brownimg {
+		position:absolute;
+		left:66px;
+		top:130px;
+	}
+	/*--------------------------------------------------------------------*/
+									/* SLIDES CSS */
+									#backgroundtext {
+										background-color:#275671;
+										width:450px;
+										height:463px;
+										position:absolute;
+										left:213px;
+										top:89px;
+										z-index:1000;
+										opacity:0.9;
+										border:white 2px solid;
+										border-radius:15px;
+										display:block;
+									}
+									
+									.taxslides {
+										width:450px;
+										height:463px;
+										position:absolute;
+										left:213px;
+										top:89px;
+										z-index:1000;
+									} 
+									
+									/*--------------------------------------------------------------------*/
+									#tutorial {
+										display:block;
+									}
+																	#startbutton {
+																		position:absolute;
+																		left:150px;
+																		top:400px;
+																		font-family:"open sans","san serif";
+																		font-weight:700;
+																		font-size:18px;
+																		width:150px;
+																	
+																	}
+
+									/*--------------------------------------------------------------------*/
+									#selectmove {
+										display:none; 
+									}
+																	form {
+																		padding-left:15px;
+																		display:block;
+																	}
+																	#fight {
+																		position:absolute;
+																		left:180px;
+																		top:410px;
+																		font-family:"open sans","san serif";
+																		font-weight:700;
+																		font-size:18px;
+																	}
+																	#selectmove form p{
+																		padding:0;
+																		margin-bottom:3px;
+																	}
+																	
+																	#instruct {
+																		font-size:16px;
+																		text-align:center;
+																	}
+									/*--------------------------------------------------------------------*/
+									/* RESULTS SCREENS */	
+									#results {									
+										background-color:#275671;
+										height: 400px;
+										-moz-border-radius:200px;
+										-webkit-border-radius: 200px;
+										width: 400px;
+										border:white 2px solid;
+										opacity:0.9;
+										position:absolute;
+										left:236px;
+										top:100px;
+										z-index:1000;
+										display:none;			
+									}								
+																	#resultstext h1 {
+																			padding:0px;
+																			width:200px;
+																			position:absolute;
+																			left:335px;
+																			top:150px;
+																			text-align:center;
+																			z-index:1000;
+																	}
+																	#resultstext p {
+																			padding:0px;
+																			width:340px;
+																			position:absolute;
+																			left:270px;
+																			top:250px;
+																			text-align:center;
+																			z-index:1000;
+																	}
+																	#tovictory {
+																		position:absolute;
+																		left:90px;
+																		top:320px;
+																		font-family:"open sans","san serif";
+																		font-weight:700;
+																		font-size:18px;
+																		width:220px;
+																	}
+									/*--------------------------------------------------------------------*/
+									/* VICTORY SCREENS */									
+									.victory {
+										width:860px;
+										height:640px;
+										position:absolute;
+										top:0px;
+										left:0px;
+										background-color:#275671;
+										z-index:1001;
+									}
+									
+									.victory h1 {
+										text-align:left;
+										top:500px;
+										font-family:"open sans","open sans","san serif";
+										padding:0px 0px 0px 20px;
+										font-size:30px;
+									}
+									
+									.victory hr {
+										width:30px;
+										border:4px white solid;
+										background-color:white;
+										position:absolute;
+										top:120px;
+										left:170px;
+										z-index:1002;
+										-moz-transform: rotate(-7.5deg);  
+										-o-transform: rotate(-7.5deg);  
+										-webkit-transform: rotate(-50deg);  
+										-ms-transform: rotate(-7.5deg);  
+										transform: rotate(-20deg);
+									
+									}
+									
+									#victoryh1 {
+										position:absolute;
+										top:40px;
+										left:15px;
+										padding-left:10px;
+										font-size:55px;
+										font-family:"open sans condensed","open sans","san serif";
+										z-index:1003;
+										color:black;
+									}
+									
+									/* VICTORY BUBBLE CONTENT */
+									.bubble {
+										background:white;
+										width:200px;
+										height:100px;
+										border-radius:15px;
+										position:absolute;
+										left:15px;
+										top:30px;
+										z-index:1002;
+									}
+									
+									.dialouge {
+										background:white;
+										width:10px;
+										height:20px;
+										position:absolute;
+										left:174px;
+										top:122px;
+										z-index:1002;
+									}
+									
+									/* EXPLAINATION SHELLS */
+									.explain {
+										width:300px;
+										height:250px;
+										position:absolute;
+										border-radius:15px;
+										background: rgba(255, 255, 255,0.1);
+										-moz-box-shadow: 0 0 5px 5px #fff;
+										-webkit-box-shadow: 0 0 5px 5px #fff;
+										box-shadow: 0 0 5px 2px #fff;
+										}
+									}
+									
+									.explain h1 {
+										text-align:left;
+										font-family:"open sans","san serif";
+										padding:0px 0px 0px 20px;
+										font-size:30px;
+									}
+									
+									.explain p {
+										padding:10px 10px 0px 20px;
+									}	
+									
+									.explain1 {
+										position:absolute;
+										left:550px;
+										top:65px;
+									}
+									.explain2 {
+										position:absolute;
+										left:230px;
+										top:65px;
+									}
+									.explain3 {
+										position:absolute;
+										left:230px;
+										top:335px;
+									}
+									.explain4 {
+										position:absolute;
+										left:550px;
+										top:335px;
+									}
+									
+									
+									/* VICTORY NEXT/PREVIOUS BUTTONS */
+									.nextbutton {
+										position:absolute;
+										top:600px;
+										left:670px;
+										font-family:"open sans","san serif";
+										font-weight:600;
+										font-size:18px;
+									}
+									
+									#previousbutton {
+										position:absolute;
+										top:600px;
+										left:350px;
+										font-family:"open sans","san serif";
+										font-weight:600;
+										font-size:18px;
+									}
+									
+									/* PROP 30 VICTORY SCREEN */
+									#prop30 {
+										display:none;
+									}
+																	#brownimg2 {
+																		position:absolute;
+																		left:17px;
+																		top:140px;
+																	}
+									#prop38 {
+										display:none;
+									}
+																	#mungerimg2 {
+																		position:absolute;
+																		left:17px;
+																		top:135px;
+																	}
+									#noprop {
+										display:none;
+									}
+																	#groverimg {
+																		position:absolute;
+																		left:17px;
+																		top:135px;
+																	}
+																	
+</style>
